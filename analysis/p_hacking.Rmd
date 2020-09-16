@@ -1,0 +1,78 @@
+---
+title: "p_hacking"
+author: "KiseokUchicago"
+date: "2020-09-16"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Importing data
+
+```{r import data}
+# read data
+library(utils)
+
+#read the Dataset sheet into “R”. The dataset will be called "data".
+covid <- read.csv("https://opendata.ecdc.europa.eu/covid19/casedistribution/csv", na.strings = "", fileEncoding = "UTF-8-BOM")
+```
+
+## Inspect the data
+```{r}
+library(dplyr)
+head(covid)
+colnames(covid)
+str(covid)
+summary(covid)
+
+```
+
+## P-hacking by Summer Zhang
+```{r}
+# Create a new variable called l_countriesAndTerritories_name to store the lengths of countries and territories' names
+covid <- covid %>% 
+  mutate(l_countriesAndTerritories_name = nchar(countriesAndTerritories))
+
+# Use  the lengths of countries and territories' names as the predictor variable
+model1 <- lm(Cumulative_number_for_14_days_of_COVID.19_cases_per_100000 ~ l_countriesAndTerritories_name, data = covid)
+summary(model1)
+
+summary(model1)$coefficient[-1,4]
+p.adjust(summary(model1)$coefficient[-1,4], method = "fdr", n=100)
+
+```
+
+## Would the FDR adjustment make it now significant?
+
+
+
+```{r}
+colnames(covid)
+df <- covid %>% select(Cumulative_number_for_14_days_of_COVID.19_cases_per_100000, l_countriesAndTerritories_name)
+dim(df)
+head(df)
+
+covid %>% 
+  arrange(desc(Cumulative_number_for_14_days_of_COVID.19_cases_per_100000)) %>%
+  select(countriesAndTerritories, dateRep) %>% head(100)
+
+
+
+
+
+
+
+
+
+# library('fuzzySim')
+# model_adj <- FDR(data = df, sp.cols = 1, var.cols = 2, family = "gaussian", correction = "fdr", q = 0.05, 
+# verbose = TRUE, simplif = FALSE)
+
+
+```
+
+
+
+
+
+
