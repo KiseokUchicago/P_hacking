@@ -1,7 +1,7 @@
-name: "P-hacking COVID-19 (c.elegans)"
+name: P-hacking COVID-19 (c.elegans)
 output_dir: ../docs
 navbar:
-  title: "P-hacking COVID-19 (c.elegans)"
+  title: P-hacking COVID-19 (c.elegans)
   left:
   - text: Home
     href: index.html
@@ -9,6 +9,10 @@ navbar:
     href: about.html
   - text: License
     href: license.html
+  right:
+  - icon: fa-github
+    text: Source code
+    href: https://github.com/KiseokUchicago/P_hacking
 output:
   workflowr::wflow_html:
     toc: yes
