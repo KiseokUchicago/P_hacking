@@ -35,7 +35,7 @@ Let's use the continent categorical data to see if it has significant impact on 
 #library(qvalue)
 data <- covid
 unique(data$dateRep)
-dates<-unique(data$dateRep) #261 days
+dates<-unique(data$dateRep) #263 days
 length(dates)
 ```
 
@@ -86,7 +86,7 @@ America looks significant in the boxplot. In this case the relationship could be
 #library(qvalue)
 data <- covid
 unique(data$dateRep)
-dates<-unique(data$dateRep) #261 days
+dates<-unique(data$dateRep) #263 days
 length(dates)
 
 # make a loop through all the dates
@@ -154,7 +154,7 @@ lmp <- function (modelobject) {
 #library(qvalue)
 data <- covid
 unique(data$dateRep)
-dates<-unique(data$dateRep) #261 days
+dates<-unique(data$dateRep) #263 days
 length(dates)
 
 # make a loop through all the dates
