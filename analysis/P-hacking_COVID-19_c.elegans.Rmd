@@ -31,14 +31,16 @@ summary(covid)
 
 Let's use the continent categorical data to see if it has significant impact on the covid-19 cases (for the 14 day period)
 
-## Testing significance of Whether the country is in the America continent
 ```{r continent America}
 #library(qvalue)
 data <- covid
 unique(data$dateRep)
 dates<-unique(data$dateRep) #261 days
 length(dates)
+```
 
+## Testing significance of Whether the country is in the America continent
+```{r}
 # make a loop through all the dates
 pvals_df <- data.frame(dateRep=character(),
                  pval=double(),
@@ -59,8 +61,8 @@ for(i in 1:length(dates)){
 
 colnames(pvals_df) <- c('dateRep','pval','qval')
 head(pvals_df)
-
 ```
+
 
 Show significant dates when continent correlates with number of covid19 cases. 
 ```{r }
@@ -76,9 +78,10 @@ data1 <- data[data$dateRep=='16/09/2020',]
 data1$continentExp
 ggplot(data1, aes_string(x='continentExp',y='Cumulative_number_for_14_days_of_COVID.19_cases_per_100000')) + geom_boxplot(aes(fill=continentExp))
 ```
+
 America looks significant in the boxplot. In this case the relationship could be causal, because America continent had times of peaking outbreaks.
 
-## Testing significance of Whether the country is in the Asia continent
+## Testing significance of whether the country is in the Asia continent
 ```{r continent Asia}
 #library(qvalue)
 data <- covid
