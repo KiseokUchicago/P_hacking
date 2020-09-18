@@ -412,7 +412,7 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2020-09-16
+<strong>Last updated:</strong> 2020-09-18
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
@@ -503,16 +503,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomKiseokUchicagoPhackingtreea5535ee17e2b0a2095c6badcda8822fb57b11d70targetblanka5535eea"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/KiseokUchicago/P_hacking/tree/a5535ee17e2b0a2095c6badcda8822fb57b11d70" target="_blank">a5535ee</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomKiseokUchicagoPhackingtreec0f1201f8be159e5e215488cbbd691df3fea51a1targetblankc0f1201a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/KiseokUchicago/P_hacking/tree/c0f1201f8be159e5e215488cbbd691df3fea51a1" target="_blank">c0f1201</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomKiseokUchicagoPhackingtreea5535ee17e2b0a2095c6badcda8822fb57b11d70targetblanka5535eea" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomKiseokUchicagoPhackingtreec0f1201f8be159e5e215488cbbd691df3fea51a1targetblankc0f1201a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/KiseokUchicago/P_hacking/tree/a5535ee17e2b0a2095c6badcda8822fb57b11d70" target="_blank">a5535ee</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/KiseokUchicago/P_hacking/tree/c0f1201f8be159e5e215488cbbd691df3fea51a1" target="_blank">c0f1201</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -559,6 +559,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/KiseokUchicago/P_hacking/blob/c0f1201f8be159e5e215488cbbd691df3fea51a1/analysis/P-hacking_COVID-19_c.elegans.Rmd" target="_blank">c0f1201</a>
+</td>
+<td>
+KiseokUchicago
+</td>
+<td>
+2020-09-18
+</td>
+<td>
+wflow_publish("analysis/*Rmd")
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/KiseokUchicago/P_hacking/be258b9e21153095c63215ee33f7888965c8cbf2/docs/P-hacking_COVID-19_c.elegans.html" target="_blank">be258b9</a>
+</td>
+<td>
+KiseokUchicago
+</td>
+<td>
+2020-09-16
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -626,12 +660,12 @@ covid &lt;- read.csv(&quot;https://opendata.ecdc.europa.eu/covid19/casedistribut
 <h2>Inspect the Data</h2>
 <pre class="r"><code>head(covid)</code></pre>
 <pre><code>     dateRep day month year cases deaths countriesAndTerritories geoId
-1 16/09/2020  16     9 2020    40     10             Afghanistan    AF
-2 15/09/2020  15     9 2020    99      6             Afghanistan    AF
-3 14/09/2020  14     9 2020    75      0             Afghanistan    AF
-4 13/09/2020  13     9 2020    35      0             Afghanistan    AF
-5 12/09/2020  12     9 2020    34      0             Afghanistan    AF
-6 11/09/2020  11     9 2020    28      0             Afghanistan    AF
+1 18/09/2020  18     9 2020     0      0             Afghanistan    AF
+2 17/09/2020  17     9 2020    17      0             Afghanistan    AF
+3 16/09/2020  16     9 2020    40     10             Afghanistan    AF
+4 15/09/2020  15     9 2020    99      6             Afghanistan    AF
+5 14/09/2020  14     9 2020    75      0             Afghanistan    AF
+6 13/09/2020  13     9 2020    35      0             Afghanistan    AF
   countryterritoryCode popData2019 continentExp
 1                  AFG    38041757         Asia
 2                  AFG    38041757         Asia
@@ -640,12 +674,12 @@ covid &lt;- read.csv(&quot;https://opendata.ecdc.europa.eu/covid19/casedistribut
 5                  AFG    38041757         Asia
 6                  AFG    38041757         Asia
   Cumulative_number_for_14_days_of_COVID.19_cases_per_100000
-1                                                   1.708649
-2                                                   1.627159
-3                                                   1.456294
-4                                                   1.309088
-5                                                   1.224970
-6                                                   1.164510</code></pre>
+1                                                   1.535155
+2                                                   1.653446
+3                                                   1.708649
+4                                                   1.627159
+5                                                   1.456294
+6                                                   1.309088</code></pre>
 <pre class="r"><code>colnames(covid)</code></pre>
 <pre><code> [1] &quot;dateRep&quot;                                                   
  [2] &quot;day&quot;                                                       
@@ -660,118 +694,118 @@ covid &lt;- read.csv(&quot;https://opendata.ecdc.europa.eu/covid19/casedistribut
 [11] &quot;continentExp&quot;                                              
 [12] &quot;Cumulative_number_for_14_days_of_COVID.19_cases_per_100000&quot;</code></pre>
 <pre class="r"><code>str(covid)</code></pre>
-<pre><code>&#39;data.frame&#39;:   43091 obs. of  12 variables:
- $ dateRep                                                   : chr  &quot;16/09/2020&quot; &quot;15/09/2020&quot; &quot;14/09/2020&quot; &quot;13/09/2020&quot; ...
- $ day                                                       : int  16 15 14 13 12 11 10 9 8 7 ...
+<pre><code>&#39;data.frame&#39;:   43509 obs. of  12 variables:
+ $ dateRep                                                   : chr  &quot;18/09/2020&quot; &quot;17/09/2020&quot; &quot;16/09/2020&quot; &quot;15/09/2020&quot; ...
+ $ day                                                       : int  18 17 16 15 14 13 12 11 10 9 ...
  $ month                                                     : int  9 9 9 9 9 9 9 9 9 9 ...
  $ year                                                      : int  2020 2020 2020 2020 2020 2020 2020 2020 2020 2020 ...
- $ cases                                                     : int  40 99 75 35 34 28 24 26 96 74 ...
- $ deaths                                                    : int  10 6 0 0 0 0 2 3 3 2 ...
+ $ cases                                                     : int  0 17 40 99 75 35 34 28 24 26 ...
+ $ deaths                                                    : int  0 0 10 6 0 0 0 0 2 3 ...
  $ countriesAndTerritories                                   : chr  &quot;Afghanistan&quot; &quot;Afghanistan&quot; &quot;Afghanistan&quot; &quot;Afghanistan&quot; ...
  $ geoId                                                     : chr  &quot;AF&quot; &quot;AF&quot; &quot;AF&quot; &quot;AF&quot; ...
  $ countryterritoryCode                                      : chr  &quot;AFG&quot; &quot;AFG&quot; &quot;AFG&quot; &quot;AFG&quot; ...
  $ popData2019                                               : int  38041757 38041757 38041757 38041757 38041757 38041757 38041757 38041757 38041757 38041757 ...
  $ continentExp                                              : chr  &quot;Asia&quot; &quot;Asia&quot; &quot;Asia&quot; &quot;Asia&quot; ...
- $ Cumulative_number_for_14_days_of_COVID.19_cases_per_100000: num  1.71 1.63 1.46 1.31 1.22 ...</code></pre>
+ $ Cumulative_number_for_14_days_of_COVID.19_cases_per_100000: num  1.54 1.65 1.71 1.63 1.46 ...</code></pre>
 <pre class="r"><code>summary(covid)</code></pre>
-<pre><code>   dateRep               day            month            year     
- Length:43091       Min.   : 1.00   Min.   : 1.00   Min.   :2019  
- Class :character   1st Qu.: 8.00   1st Qu.: 4.00   1st Qu.:2020  
- Mode  :character   Median :15.00   Median : 6.00   Median :2020  
-                    Mean   :15.61   Mean   : 5.57   Mean   :2020  
-                    3rd Qu.:23.00   3rd Qu.: 7.00   3rd Qu.:2020  
-                    Max.   :31.00   Max.   :12.00   Max.   :2020  
-                                                                  
+<pre><code>   dateRep               day            month             year     
+ Length:43509       Min.   : 1.00   Min.   : 1.000   Min.   :2019  
+ Class :character   1st Qu.: 8.00   1st Qu.: 4.000   1st Qu.:2020  
+ Mode  :character   Median :15.00   Median : 6.000   Median :2020  
+                    Mean   :15.63   Mean   : 5.603   Mean   :2020  
+                    3rd Qu.:23.00   3rd Qu.: 7.000   3rd Qu.:2020  
+                    Max.   :31.00   Max.   :12.000   Max.   :2020  
+                                                                   
      cases             deaths         countriesAndTerritories
- Min.   :-8261.0   Min.   :-1918.00   Length:43091           
+ Min.   :-8261.0   Min.   :-1918.00   Length:43509           
  1st Qu.:    0.0   1st Qu.:    0.00   Class :character       
  Median :    9.0   Median :    0.00   Mode  :character       
- Mean   :  687.2   Mean   :   21.72                          
- 3rd Qu.:  146.0   3rd Qu.:    3.00                          
- Max.   :97570.0   Max.   : 4928.00                          
+ Mean   :  694.4   Mean   :   21.76                          
+ 3rd Qu.:  148.0   3rd Qu.:    3.00                          
+ Max.   :97894.0   Max.   : 4928.00                          
                                                              
     geoId           countryterritoryCode  popData2019        continentExp      
- Length:43091       Length:43091         Min.   :8.150e+02   Length:43091      
+ Length:43509       Length:43509         Min.   :8.150e+02   Length:43509      
  Class :character   Class :character     1st Qu.:1.356e+06   Class :character  
  Mode  :character   Mode  :character     Median :8.519e+06   Mode  :character  
-                                         Mean   :4.296e+07                     
+                                         Mean   :4.290e+07                     
                                          3rd Qu.:2.916e+07                     
                                          Max.   :1.434e+09                     
                                          NA&#39;s   :64                            
  Cumulative_number_for_14_days_of_COVID.19_cases_per_100000
  Min.   :-147.4196                                         
- 1st Qu.:   0.3577                                         
- Median :   4.4838                                         
- Mean   :  32.5238                                         
- 3rd Qu.:  26.0517                                         
+ 1st Qu.:   0.3668                                         
+ Median :   4.5360                                         
+ Mean   :  32.8394                                         
+ 3rd Qu.:  26.3765                                         
  Max.   :1058.2259                                         
  NA&#39;s   :2781                                              </code></pre>
 </div>
 <div id="p-hacking" class="section level2">
 <h2>P-hacking</h2>
 <p>Let’s use the continent categorical data to see if it has significant impact on the covid-19 cases (for the 14 day period)</p>
-</div>
-<div id="testing-significance-of-whether-the-country-is-in-the-america-continent" class="section level2">
-<h2>Testing significance of Whether the country is in the America continent</h2>
 <pre class="r"><code>#library(qvalue)
 data &lt;- covid
 unique(data$dateRep)</code></pre>
-<pre><code>  [1] &quot;16/09/2020&quot; &quot;15/09/2020&quot; &quot;14/09/2020&quot; &quot;13/09/2020&quot; &quot;12/09/2020&quot;
-  [6] &quot;11/09/2020&quot; &quot;10/09/2020&quot; &quot;09/09/2020&quot; &quot;08/09/2020&quot; &quot;07/09/2020&quot;
- [11] &quot;06/09/2020&quot; &quot;05/09/2020&quot; &quot;04/09/2020&quot; &quot;03/09/2020&quot; &quot;02/09/2020&quot;
- [16] &quot;01/09/2020&quot; &quot;31/08/2020&quot; &quot;30/08/2020&quot; &quot;29/08/2020&quot; &quot;28/08/2020&quot;
- [21] &quot;27/08/2020&quot; &quot;26/08/2020&quot; &quot;25/08/2020&quot; &quot;24/08/2020&quot; &quot;23/08/2020&quot;
- [26] &quot;22/08/2020&quot; &quot;21/08/2020&quot; &quot;20/08/2020&quot; &quot;19/08/2020&quot; &quot;18/08/2020&quot;
- [31] &quot;17/08/2020&quot; &quot;16/08/2020&quot; &quot;15/08/2020&quot; &quot;14/08/2020&quot; &quot;13/08/2020&quot;
- [36] &quot;12/08/2020&quot; &quot;11/08/2020&quot; &quot;10/08/2020&quot; &quot;09/08/2020&quot; &quot;08/08/2020&quot;
- [41] &quot;07/08/2020&quot; &quot;06/08/2020&quot; &quot;05/08/2020&quot; &quot;04/08/2020&quot; &quot;03/08/2020&quot;
- [46] &quot;02/08/2020&quot; &quot;01/08/2020&quot; &quot;31/07/2020&quot; &quot;30/07/2020&quot; &quot;29/07/2020&quot;
- [51] &quot;28/07/2020&quot; &quot;27/07/2020&quot; &quot;26/07/2020&quot; &quot;25/07/2020&quot; &quot;24/07/2020&quot;
- [56] &quot;23/07/2020&quot; &quot;22/07/2020&quot; &quot;21/07/2020&quot; &quot;20/07/2020&quot; &quot;19/07/2020&quot;
- [61] &quot;18/07/2020&quot; &quot;17/07/2020&quot; &quot;16/07/2020&quot; &quot;15/07/2020&quot; &quot;14/07/2020&quot;
- [66] &quot;13/07/2020&quot; &quot;12/07/2020&quot; &quot;11/07/2020&quot; &quot;10/07/2020&quot; &quot;09/07/2020&quot;
- [71] &quot;08/07/2020&quot; &quot;07/07/2020&quot; &quot;06/07/2020&quot; &quot;05/07/2020&quot; &quot;04/07/2020&quot;
- [76] &quot;03/07/2020&quot; &quot;02/07/2020&quot; &quot;01/07/2020&quot; &quot;30/06/2020&quot; &quot;29/06/2020&quot;
- [81] &quot;28/06/2020&quot; &quot;27/06/2020&quot; &quot;26/06/2020&quot; &quot;25/06/2020&quot; &quot;24/06/2020&quot;
- [86] &quot;23/06/2020&quot; &quot;22/06/2020&quot; &quot;21/06/2020&quot; &quot;20/06/2020&quot; &quot;19/06/2020&quot;
- [91] &quot;18/06/2020&quot; &quot;17/06/2020&quot; &quot;16/06/2020&quot; &quot;15/06/2020&quot; &quot;14/06/2020&quot;
- [96] &quot;13/06/2020&quot; &quot;12/06/2020&quot; &quot;11/06/2020&quot; &quot;10/06/2020&quot; &quot;09/06/2020&quot;
-[101] &quot;08/06/2020&quot; &quot;07/06/2020&quot; &quot;06/06/2020&quot; &quot;05/06/2020&quot; &quot;04/06/2020&quot;
-[106] &quot;03/06/2020&quot; &quot;02/06/2020&quot; &quot;01/06/2020&quot; &quot;31/05/2020&quot; &quot;30/05/2020&quot;
-[111] &quot;29/05/2020&quot; &quot;28/05/2020&quot; &quot;27/05/2020&quot; &quot;26/05/2020&quot; &quot;25/05/2020&quot;
-[116] &quot;24/05/2020&quot; &quot;23/05/2020&quot; &quot;22/05/2020&quot; &quot;21/05/2020&quot; &quot;20/05/2020&quot;
-[121] &quot;19/05/2020&quot; &quot;18/05/2020&quot; &quot;17/05/2020&quot; &quot;16/05/2020&quot; &quot;15/05/2020&quot;
-[126] &quot;14/05/2020&quot; &quot;13/05/2020&quot; &quot;12/05/2020&quot; &quot;11/05/2020&quot; &quot;10/05/2020&quot;
-[131] &quot;09/05/2020&quot; &quot;08/05/2020&quot; &quot;07/05/2020&quot; &quot;06/05/2020&quot; &quot;05/05/2020&quot;
-[136] &quot;04/05/2020&quot; &quot;03/05/2020&quot; &quot;02/05/2020&quot; &quot;01/05/2020&quot; &quot;30/04/2020&quot;
-[141] &quot;29/04/2020&quot; &quot;28/04/2020&quot; &quot;27/04/2020&quot; &quot;26/04/2020&quot; &quot;25/04/2020&quot;
-[146] &quot;24/04/2020&quot; &quot;23/04/2020&quot; &quot;22/04/2020&quot; &quot;21/04/2020&quot; &quot;20/04/2020&quot;
-[151] &quot;19/04/2020&quot; &quot;18/04/2020&quot; &quot;17/04/2020&quot; &quot;16/04/2020&quot; &quot;15/04/2020&quot;
-[156] &quot;14/04/2020&quot; &quot;13/04/2020&quot; &quot;12/04/2020&quot; &quot;11/04/2020&quot; &quot;10/04/2020&quot;
-[161] &quot;09/04/2020&quot; &quot;08/04/2020&quot; &quot;07/04/2020&quot; &quot;06/04/2020&quot; &quot;05/04/2020&quot;
-[166] &quot;04/04/2020&quot; &quot;03/04/2020&quot; &quot;02/04/2020&quot; &quot;01/04/2020&quot; &quot;31/03/2020&quot;
-[171] &quot;30/03/2020&quot; &quot;29/03/2020&quot; &quot;28/03/2020&quot; &quot;27/03/2020&quot; &quot;26/03/2020&quot;
-[176] &quot;25/03/2020&quot; &quot;24/03/2020&quot; &quot;23/03/2020&quot; &quot;22/03/2020&quot; &quot;21/03/2020&quot;
-[181] &quot;20/03/2020&quot; &quot;19/03/2020&quot; &quot;18/03/2020&quot; &quot;17/03/2020&quot; &quot;16/03/2020&quot;
-[186] &quot;15/03/2020&quot; &quot;11/03/2020&quot; &quot;08/03/2020&quot; &quot;02/03/2020&quot; &quot;01/03/2020&quot;
-[191] &quot;29/02/2020&quot; &quot;28/02/2020&quot; &quot;27/02/2020&quot; &quot;26/02/2020&quot; &quot;25/02/2020&quot;
-[196] &quot;24/02/2020&quot; &quot;23/02/2020&quot; &quot;22/02/2020&quot; &quot;21/02/2020&quot; &quot;20/02/2020&quot;
-[201] &quot;19/02/2020&quot; &quot;18/02/2020&quot; &quot;17/02/2020&quot; &quot;16/02/2020&quot; &quot;15/02/2020&quot;
-[206] &quot;14/02/2020&quot; &quot;13/02/2020&quot; &quot;12/02/2020&quot; &quot;11/02/2020&quot; &quot;10/02/2020&quot;
-[211] &quot;09/02/2020&quot; &quot;08/02/2020&quot; &quot;07/02/2020&quot; &quot;06/02/2020&quot; &quot;05/02/2020&quot;
-[216] &quot;04/02/2020&quot; &quot;03/02/2020&quot; &quot;02/02/2020&quot; &quot;01/02/2020&quot; &quot;31/01/2020&quot;
-[221] &quot;30/01/2020&quot; &quot;29/01/2020&quot; &quot;28/01/2020&quot; &quot;27/01/2020&quot; &quot;26/01/2020&quot;
-[226] &quot;25/01/2020&quot; &quot;24/01/2020&quot; &quot;23/01/2020&quot; &quot;22/01/2020&quot; &quot;21/01/2020&quot;
-[231] &quot;20/01/2020&quot; &quot;19/01/2020&quot; &quot;18/01/2020&quot; &quot;17/01/2020&quot; &quot;16/01/2020&quot;
-[236] &quot;15/01/2020&quot; &quot;14/01/2020&quot; &quot;13/01/2020&quot; &quot;12/01/2020&quot; &quot;11/01/2020&quot;
-[241] &quot;10/01/2020&quot; &quot;09/01/2020&quot; &quot;08/01/2020&quot; &quot;07/01/2020&quot; &quot;06/01/2020&quot;
-[246] &quot;05/01/2020&quot; &quot;04/01/2020&quot; &quot;03/01/2020&quot; &quot;02/01/2020&quot; &quot;01/01/2020&quot;
-[251] &quot;31/12/2019&quot; &quot;14/03/2020&quot; &quot;13/03/2020&quot; &quot;12/03/2020&quot; &quot;10/03/2020&quot;
-[256] &quot;09/03/2020&quot; &quot;06/03/2020&quot; &quot;05/03/2020&quot; &quot;04/03/2020&quot; &quot;03/03/2020&quot;
-[261] &quot;07/03/2020&quot;</code></pre>
+<pre><code>  [1] &quot;18/09/2020&quot; &quot;17/09/2020&quot; &quot;16/09/2020&quot; &quot;15/09/2020&quot; &quot;14/09/2020&quot;
+  [6] &quot;13/09/2020&quot; &quot;12/09/2020&quot; &quot;11/09/2020&quot; &quot;10/09/2020&quot; &quot;09/09/2020&quot;
+ [11] &quot;08/09/2020&quot; &quot;07/09/2020&quot; &quot;06/09/2020&quot; &quot;05/09/2020&quot; &quot;04/09/2020&quot;
+ [16] &quot;03/09/2020&quot; &quot;02/09/2020&quot; &quot;01/09/2020&quot; &quot;31/08/2020&quot; &quot;30/08/2020&quot;
+ [21] &quot;29/08/2020&quot; &quot;28/08/2020&quot; &quot;27/08/2020&quot; &quot;26/08/2020&quot; &quot;25/08/2020&quot;
+ [26] &quot;24/08/2020&quot; &quot;23/08/2020&quot; &quot;22/08/2020&quot; &quot;21/08/2020&quot; &quot;20/08/2020&quot;
+ [31] &quot;19/08/2020&quot; &quot;18/08/2020&quot; &quot;17/08/2020&quot; &quot;16/08/2020&quot; &quot;15/08/2020&quot;
+ [36] &quot;14/08/2020&quot; &quot;13/08/2020&quot; &quot;12/08/2020&quot; &quot;11/08/2020&quot; &quot;10/08/2020&quot;
+ [41] &quot;09/08/2020&quot; &quot;08/08/2020&quot; &quot;07/08/2020&quot; &quot;06/08/2020&quot; &quot;05/08/2020&quot;
+ [46] &quot;04/08/2020&quot; &quot;03/08/2020&quot; &quot;02/08/2020&quot; &quot;01/08/2020&quot; &quot;31/07/2020&quot;
+ [51] &quot;30/07/2020&quot; &quot;29/07/2020&quot; &quot;28/07/2020&quot; &quot;27/07/2020&quot; &quot;26/07/2020&quot;
+ [56] &quot;25/07/2020&quot; &quot;24/07/2020&quot; &quot;23/07/2020&quot; &quot;22/07/2020&quot; &quot;21/07/2020&quot;
+ [61] &quot;20/07/2020&quot; &quot;19/07/2020&quot; &quot;18/07/2020&quot; &quot;17/07/2020&quot; &quot;16/07/2020&quot;
+ [66] &quot;15/07/2020&quot; &quot;14/07/2020&quot; &quot;13/07/2020&quot; &quot;12/07/2020&quot; &quot;11/07/2020&quot;
+ [71] &quot;10/07/2020&quot; &quot;09/07/2020&quot; &quot;08/07/2020&quot; &quot;07/07/2020&quot; &quot;06/07/2020&quot;
+ [76] &quot;05/07/2020&quot; &quot;04/07/2020&quot; &quot;03/07/2020&quot; &quot;02/07/2020&quot; &quot;01/07/2020&quot;
+ [81] &quot;30/06/2020&quot; &quot;29/06/2020&quot; &quot;28/06/2020&quot; &quot;27/06/2020&quot; &quot;26/06/2020&quot;
+ [86] &quot;25/06/2020&quot; &quot;24/06/2020&quot; &quot;23/06/2020&quot; &quot;22/06/2020&quot; &quot;21/06/2020&quot;
+ [91] &quot;20/06/2020&quot; &quot;19/06/2020&quot; &quot;18/06/2020&quot; &quot;17/06/2020&quot; &quot;16/06/2020&quot;
+ [96] &quot;15/06/2020&quot; &quot;14/06/2020&quot; &quot;13/06/2020&quot; &quot;12/06/2020&quot; &quot;11/06/2020&quot;
+[101] &quot;10/06/2020&quot; &quot;09/06/2020&quot; &quot;08/06/2020&quot; &quot;07/06/2020&quot; &quot;06/06/2020&quot;
+[106] &quot;05/06/2020&quot; &quot;04/06/2020&quot; &quot;03/06/2020&quot; &quot;02/06/2020&quot; &quot;01/06/2020&quot;
+[111] &quot;31/05/2020&quot; &quot;30/05/2020&quot; &quot;29/05/2020&quot; &quot;28/05/2020&quot; &quot;27/05/2020&quot;
+[116] &quot;26/05/2020&quot; &quot;25/05/2020&quot; &quot;24/05/2020&quot; &quot;23/05/2020&quot; &quot;22/05/2020&quot;
+[121] &quot;21/05/2020&quot; &quot;20/05/2020&quot; &quot;19/05/2020&quot; &quot;18/05/2020&quot; &quot;17/05/2020&quot;
+[126] &quot;16/05/2020&quot; &quot;15/05/2020&quot; &quot;14/05/2020&quot; &quot;13/05/2020&quot; &quot;12/05/2020&quot;
+[131] &quot;11/05/2020&quot; &quot;10/05/2020&quot; &quot;09/05/2020&quot; &quot;08/05/2020&quot; &quot;07/05/2020&quot;
+[136] &quot;06/05/2020&quot; &quot;05/05/2020&quot; &quot;04/05/2020&quot; &quot;03/05/2020&quot; &quot;02/05/2020&quot;
+[141] &quot;01/05/2020&quot; &quot;30/04/2020&quot; &quot;29/04/2020&quot; &quot;28/04/2020&quot; &quot;27/04/2020&quot;
+[146] &quot;26/04/2020&quot; &quot;25/04/2020&quot; &quot;24/04/2020&quot; &quot;23/04/2020&quot; &quot;22/04/2020&quot;
+[151] &quot;21/04/2020&quot; &quot;20/04/2020&quot; &quot;19/04/2020&quot; &quot;18/04/2020&quot; &quot;17/04/2020&quot;
+[156] &quot;16/04/2020&quot; &quot;15/04/2020&quot; &quot;14/04/2020&quot; &quot;13/04/2020&quot; &quot;12/04/2020&quot;
+[161] &quot;11/04/2020&quot; &quot;10/04/2020&quot; &quot;09/04/2020&quot; &quot;08/04/2020&quot; &quot;07/04/2020&quot;
+[166] &quot;06/04/2020&quot; &quot;05/04/2020&quot; &quot;04/04/2020&quot; &quot;03/04/2020&quot; &quot;02/04/2020&quot;
+[171] &quot;01/04/2020&quot; &quot;31/03/2020&quot; &quot;30/03/2020&quot; &quot;29/03/2020&quot; &quot;28/03/2020&quot;
+[176] &quot;27/03/2020&quot; &quot;26/03/2020&quot; &quot;25/03/2020&quot; &quot;24/03/2020&quot; &quot;23/03/2020&quot;
+[181] &quot;22/03/2020&quot; &quot;21/03/2020&quot; &quot;20/03/2020&quot; &quot;19/03/2020&quot; &quot;18/03/2020&quot;
+[186] &quot;17/03/2020&quot; &quot;16/03/2020&quot; &quot;15/03/2020&quot; &quot;11/03/2020&quot; &quot;08/03/2020&quot;
+[191] &quot;02/03/2020&quot; &quot;01/03/2020&quot; &quot;29/02/2020&quot; &quot;28/02/2020&quot; &quot;27/02/2020&quot;
+[196] &quot;26/02/2020&quot; &quot;25/02/2020&quot; &quot;24/02/2020&quot; &quot;23/02/2020&quot; &quot;22/02/2020&quot;
+[201] &quot;21/02/2020&quot; &quot;20/02/2020&quot; &quot;19/02/2020&quot; &quot;18/02/2020&quot; &quot;17/02/2020&quot;
+[206] &quot;16/02/2020&quot; &quot;15/02/2020&quot; &quot;14/02/2020&quot; &quot;13/02/2020&quot; &quot;12/02/2020&quot;
+[211] &quot;11/02/2020&quot; &quot;10/02/2020&quot; &quot;09/02/2020&quot; &quot;08/02/2020&quot; &quot;07/02/2020&quot;
+[216] &quot;06/02/2020&quot; &quot;05/02/2020&quot; &quot;04/02/2020&quot; &quot;03/02/2020&quot; &quot;02/02/2020&quot;
+[221] &quot;01/02/2020&quot; &quot;31/01/2020&quot; &quot;30/01/2020&quot; &quot;29/01/2020&quot; &quot;28/01/2020&quot;
+[226] &quot;27/01/2020&quot; &quot;26/01/2020&quot; &quot;25/01/2020&quot; &quot;24/01/2020&quot; &quot;23/01/2020&quot;
+[231] &quot;22/01/2020&quot; &quot;21/01/2020&quot; &quot;20/01/2020&quot; &quot;19/01/2020&quot; &quot;18/01/2020&quot;
+[236] &quot;17/01/2020&quot; &quot;16/01/2020&quot; &quot;15/01/2020&quot; &quot;14/01/2020&quot; &quot;13/01/2020&quot;
+[241] &quot;12/01/2020&quot; &quot;11/01/2020&quot; &quot;10/01/2020&quot; &quot;09/01/2020&quot; &quot;08/01/2020&quot;
+[246] &quot;07/01/2020&quot; &quot;06/01/2020&quot; &quot;05/01/2020&quot; &quot;04/01/2020&quot; &quot;03/01/2020&quot;
+[251] &quot;02/01/2020&quot; &quot;01/01/2020&quot; &quot;31/12/2019&quot; &quot;14/03/2020&quot; &quot;13/03/2020&quot;
+[256] &quot;12/03/2020&quot; &quot;10/03/2020&quot; &quot;09/03/2020&quot; &quot;06/03/2020&quot; &quot;05/03/2020&quot;
+[261] &quot;04/03/2020&quot; &quot;03/03/2020&quot; &quot;07/03/2020&quot;</code></pre>
 <pre class="r"><code>dates&lt;-unique(data$dateRep) #261 days
 length(dates)</code></pre>
-<pre><code>[1] 261</code></pre>
+<pre><code>[1] 263</code></pre>
+</div>
+<div id="testing-significance-of-whether-the-country-is-in-the-america-continent" class="section level2">
+<h2>Testing significance of Whether the country is in the America continent</h2>
 <pre class="r"><code># make a loop through all the dates
 pvals_df &lt;- data.frame(dateRep=character(),
                  pval=double(),
@@ -789,7 +823,9 @@ for(i in 1:length(dates)){
   pvals_df &lt;- rbind(pvals_df, c(date,pval,pval.adjust))
   counter &lt;- counter +1
 }</code></pre>
-<pre><code>[1] &quot;16/09/2020&quot;
+<pre><code>[1] &quot;18/09/2020&quot;
+[1] &quot;17/09/2020&quot;
+[1] &quot;16/09/2020&quot;
 [1] &quot;15/09/2020&quot;
 [1] &quot;14/09/2020&quot;
 [1] &quot;13/09/2020&quot;
@@ -1031,84 +1067,86 @@ for(i in 1:length(dates)){
 <pre><code>Error in `contrasts&lt;-`(`*tmp*`, value = contr.funs[1 + isOF[nn]]): contrasts can be applied only to factors with 2 or more levels</code></pre>
 <pre class="r"><code>colnames(pvals_df) &lt;- c(&#39;dateRep&#39;,&#39;pval&#39;,&#39;qval&#39;)
 head(pvals_df)</code></pre>
-<pre><code>     dateRep                 pval                 qval
-1 16/09/2020  3.0899766397056e-05  0.00806483902963163
-2 15/09/2020  2.9859214646183e-05  0.00779325502265375
-3 14/09/2020 1.53890151102835e-05  0.00401653294378399
-4 13/09/2020 1.10359666749147e-05  0.00288038730215274
-5 12/09/2020 6.01776158854885e-06  0.00157063577461125
-6 11/09/2020 3.27294255201334e-06 0.000854238006075483</code></pre>
+<pre><code>     dateRep                 pval                qval
+1 18/09/2020 6.75321629797262e-05   0.017760958863668
+2 17/09/2020 5.62916403152184e-05  0.0148047014029024
+3 16/09/2020 3.55491198447954e-05 0.00934941851918119
+4 15/09/2020 2.99200249268467e-05 0.00786896655576069
+5 14/09/2020 1.54154202039573e-05 0.00405425551364078
+6 13/09/2020 1.10548663692386e-05 0.00290742985510975</code></pre>
 <p>Show significant dates when continent correlates with number of covid19 cases.</p>
 <pre class="r"><code># significant dates with p-value (un-adjusted)
 pvals_df %&gt;% filter(pval &lt; 0.05)</code></pre>
 <pre><code>      dateRep                 pval               qval
-1  31/07/2020 0.000178265858791312 0.0465273891445323
-2  30/07/2020 0.000243948186232371 0.0636704766066489
-3  29/07/2020 0.000269654069514495 0.0703797121432833
-4  28/07/2020 0.000388148968454475  0.101306880766618
-5  27/07/2020 0.000627074129077444  0.163666347689213
-6  26/07/2020 0.000919094163555509  0.239883576687988
-7  25/07/2020  0.00133580073180488  0.348643991001072
-8  24/07/2020  0.00109445479387408  0.285652701201136
-9  23/07/2020  0.00149214925206693  0.389450954789469
-10 22/07/2020  0.00166780784253113  0.435297846900626
-11 21/07/2020  0.00214219521132791  0.559112950156585
-12 20/07/2020   0.0028187437968791  0.735692130985446
-13 19/07/2020  0.00344774084563656  0.899860360711143
-14 18/07/2020  0.00416969871801584                  1
-15 17/07/2020  0.00448851083224892                  1
-16 16/07/2020  0.00724647577584971                  1
-17 15/07/2020  0.00875229250666618                  1
-18 14/07/2020   0.0119177456727318                  1
-19 13/07/2020   0.0091543301979838                  1
-20 12/07/2020  0.00811192391062891                  1
-21 11/07/2020   0.0100470781459787                  1
-22 10/07/2020   0.0154226717145507                  1
-23 09/07/2020   0.0165921183640824                  1
-24 08/07/2020   0.0155421326387927                  1
-25 07/07/2020   0.0175531005297034                  1
-26 06/07/2020   0.0205272405565404                  1
-27 05/07/2020   0.0220087357920169                  1
-28 04/07/2020   0.0229640181320497                  1
-29 03/07/2020    0.023743159056085                  1
-30 02/07/2020   0.0208940379997353                  1
-31 01/07/2020   0.0168052476859623                  1
-32 30/06/2020    0.016038387665322                  1
-33 29/06/2020    0.023117595739925                  1
-34 28/06/2020   0.0298562102257707                  1
-35 27/06/2020    0.032086790408126                  1
-36 26/06/2020   0.0344442102502083                  1
-37 25/06/2020   0.0355513645903344                  1</code></pre>
+1  31/07/2020 0.000178382282264346 0.0469145402355229
+2  30/07/2020 0.000244122333777342 0.0642041737834409
+3  29/07/2020 0.000269953152599977 0.0709976791337938
+4  28/07/2020 0.000388348786556012  0.102135730864231
+5  27/07/2020 0.000627168032173256  0.164945192461566
+6  26/07/2020 0.000919973208078108  0.241952953724542
+7  25/07/2020   0.0013361845688898  0.351416541618018
+8  24/07/2020  0.00109459356738236   0.28787810822156
+9  23/07/2020  0.00149212691756877  0.392429379320586
+10 22/07/2020  0.00166792432529277  0.438664097551999
+11 21/07/2020  0.00214180351041523  0.563294323239205
+12 20/07/2020  0.00281852005979366  0.741270775725733
+13 19/07/2020  0.00344632631193698  0.906383820039425
+14 18/07/2020  0.00416755657719042                  1
+15 17/07/2020  0.00448504270745829                  1
+16 16/07/2020  0.00723938094115613                  1
+17 15/07/2020  0.00874052522387993                  1
+18 14/07/2020   0.0119087008032312                  1
+19 13/07/2020   0.0091417356126458                  1
+20 12/07/2020  0.00808675579033082                  1
+21 11/07/2020   0.0100066547923238                  1
+22 10/07/2020   0.0153393505426011                  1
+23 09/07/2020   0.0165012402972586                  1
+24 08/07/2020   0.0154918054593323                  1
+25 07/07/2020   0.0175531129623498                  1
+26 06/07/2020   0.0204888014624484                  1
+27 05/07/2020   0.0219417863842942                  1
+28 04/07/2020   0.0228491287126885                  1
+29 03/07/2020   0.0236241022187193                  1
+30 02/07/2020   0.0208314943499313                  1
+31 01/07/2020    0.016807782188711                  1
+32 30/06/2020   0.0160353642758635                  1
+33 29/06/2020   0.0230753668257642                  1
+34 28/06/2020   0.0298327330769205                  1
+35 27/06/2020   0.0320836401156208                  1
+36 26/06/2020   0.0344898590440341                  1
+37 25/06/2020   0.0356189437296433                  1</code></pre>
 <pre class="r"><code># significant dates with q-value (fdr correction)
 pvals_df %&gt;% filter(qval &lt; 0.05)</code></pre>
 <pre><code>      dateRep                 pval                 qval
-1  16/09/2020  3.0899766397056e-05  0.00806483902963163
-2  15/09/2020  2.9859214646183e-05  0.00779325502265375
-3  14/09/2020 1.53890151102835e-05  0.00401653294378399
-4  13/09/2020 1.10359666749147e-05  0.00288038730215274
-5  12/09/2020 6.01776158854885e-06  0.00157063577461125
-6  11/09/2020 3.27294255201334e-06 0.000854238006075483
-7  10/09/2020 2.22507795734864e-06 0.000580745346867994
-8  09/09/2020 1.94890939403431e-06 0.000508665351842954
-9  08/09/2020 1.77743240069275e-06 0.000463909856580809
-10 07/09/2020 1.42000674104733e-06 0.000370621759413352
-11 06/09/2020  5.8634105592419e-07 0.000153035015596214
-12 05/09/2020 6.60301048657589e-07 0.000172338573699631
-13 04/09/2020 4.29086929522263e-07 0.000111991688605311
-14 03/09/2020 4.06599385025982e-07 0.000106122439491781
-15 02/09/2020 4.18755400299519e-07 0.000109295159478175
-16 11/08/2020 5.74090369377635e-07 0.000149837586407563
-17 10/08/2020 6.22111683370403e-07 0.000162371149359675
-18 09/08/2020 7.07931141456878e-07 0.000184770027920245
-19 08/08/2020 1.35170668213484e-06 0.000352795444037194
-20 07/08/2020 4.82672306640706e-06  0.00125977472033224
-21 06/08/2020 1.47502557399801e-05   0.0038498167481348
-22 05/08/2020 2.94691380556415e-05  0.00769144503252243
-23 04/08/2020 4.26769572129893e-05   0.0111386858325902
-24 03/08/2020 5.80390186430484e-05   0.0151481838658356
-25 02/08/2020 8.67978281932163e-05   0.0226542331584295
-26 01/08/2020 6.30270822300533e-05   0.0164500684620439
-27 31/07/2020 0.000178265858791312   0.0465273891445323</code></pre>
+1  18/09/2020 6.75321629797262e-05    0.017760958863668
+2  17/09/2020 5.62916403152184e-05   0.0148047014029024
+3  16/09/2020 3.55491198447954e-05  0.00934941851918119
+4  15/09/2020 2.99200249268467e-05  0.00786896655576069
+5  14/09/2020 1.54154202039573e-05  0.00405425551364078
+6  13/09/2020 1.10548663692386e-05  0.00290742985510975
+7  12/09/2020 6.03737251751478e-06  0.00158782897210639
+8  11/09/2020 3.28172182856874e-06 0.000863092840913578
+9  10/09/2020 2.22975466505017e-06 0.000586425476908194
+10 09/09/2020 1.94681131208232e-06 0.000512011375077651
+11 08/09/2020 1.77914416624418e-06 0.000467914915722218
+12 07/09/2020 1.42207087049195e-06 0.000374004638939384
+13 06/09/2020 5.86931995993994e-07  0.00015436311494642
+14 05/09/2020 6.60459382152839e-07 0.000173700817506197
+15 04/09/2020 4.29973292709009e-07 0.000113082975982469
+16 03/09/2020 4.07007416207812e-07 0.000107042950462655
+17 02/09/2020 4.19964363723713e-07 0.000110450627659336
+18 11/08/2020 5.72811479020826e-07 0.000150649418982477
+19 10/08/2020 6.20969699430764e-07 0.000163315030950291
+20 09/08/2020   7.064093911509e-07 0.000185785669872687
+21 08/08/2020 1.35047972847653e-06 0.000355176168589329
+22 07/08/2020 4.82905036372834e-06  0.00127004024566055
+23 06/08/2020 1.47579913739353e-05  0.00388135173134499
+24 05/08/2020   2.949571747398e-05  0.00775737369565674
+25 04/08/2020 4.27246081248905e-05   0.0112365719368462
+26 03/08/2020 5.80762856256886e-05   0.0152740631195561
+27 02/08/2020 8.68955609513267e-05   0.0228535325301989
+28 01/08/2020 6.31140892679024e-05   0.0165990054774583
+29 31/07/2020 0.000178382282264346   0.0469145402355229</code></pre>
 <pre class="r"><code># show specific date (significant q-value): 16/09/2020
 library(ggplot2)
 data1 &lt;- data[data$dateRep==&#39;16/09/2020&#39;,]
@@ -1138,75 +1176,76 @@ data1$continentExp</code></pre>
 [155] &quot;Europe&quot;  &quot;America&quot; &quot;Asia&quot;    &quot;Europe&quot;  &quot;Europe&quot;  &quot;Africa&quot;  &quot;America&quot;
 [162] &quot;America&quot; &quot;America&quot; &quot;Europe&quot;  &quot;Africa&quot;  &quot;Asia&quot;    &quot;Africa&quot;  &quot;Europe&quot; 
 [169] &quot;Africa&quot;  &quot;Africa&quot;  &quot;Asia&quot;    &quot;America&quot; &quot;Europe&quot;  &quot;Europe&quot;  &quot;Africa&quot; 
-[176] &quot;Africa&quot;  &quot;Asia&quot;    &quot;Africa&quot;  &quot;Asia&quot;    &quot;Africa&quot;  &quot;America&quot; &quot;Europe&quot; 
-[183] &quot;Europe&quot;  &quot;Asia&quot;    &quot;Asia&quot;    &quot;Asia&quot;    &quot;Asia&quot;    &quot;Asia&quot;    &quot;Africa&quot; 
-[190] &quot;America&quot; &quot;Africa&quot;  &quot;Asia&quot;    &quot;America&quot; &quot;Africa&quot;  &quot;Europe&quot;  &quot;Asia&quot;   
-[197] &quot;Europe&quot;  &quot;Africa&quot;  &quot;America&quot; &quot;America&quot; &quot;America&quot; &quot;Asia&quot;    &quot;America&quot;
-[204] &quot;Asia&quot;    &quot;Africa&quot;  &quot;Asia&quot;    &quot;Africa&quot;  &quot;Africa&quot; </code></pre>
+[176] &quot;Africa&quot;  &quot;Asia&quot;    &quot;Africa&quot;  &quot;Europe&quot;  &quot;Asia&quot;    &quot;Africa&quot;  &quot;America&quot;
+[183] &quot;Europe&quot;  &quot;Europe&quot;  &quot;Asia&quot;    &quot;Asia&quot;    &quot;Asia&quot;    &quot;Asia&quot;    &quot;Asia&quot;   
+[190] &quot;Africa&quot;  &quot;America&quot; &quot;Africa&quot;  &quot;Asia&quot;    &quot;America&quot; &quot;Africa&quot;  &quot;Europe&quot; 
+[197] &quot;Asia&quot;    &quot;Europe&quot;  &quot;Africa&quot;  &quot;America&quot; &quot;America&quot; &quot;America&quot; &quot;Asia&quot;   
+[204] &quot;America&quot; &quot;Asia&quot;    &quot;Africa&quot;  &quot;Asia&quot;    &quot;Africa&quot;  &quot;Africa&quot; </code></pre>
 <pre class="r"><code>ggplot(data1, aes_string(x=&#39;continentExp&#39;,y=&#39;Cumulative_number_for_14_days_of_COVID.19_cases_per_100000&#39;)) + geom_boxplot(aes(fill=continentExp))</code></pre>
-<p><img src="figure/P-hacking_COVID-19_c.elegans.Rmd/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /> America looks significant in the boxplot. In this case the relationship could be causal, because America continent had times of peaking outbreaks.</p>
+<p><img src="figure/P-hacking_COVID-19_c.elegans.Rmd/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>America looks significant in the boxplot. In this case the relationship could be causal, because America continent had times of peaking outbreaks.</p>
 </div>
 <div id="testing-significance-of-whether-the-country-is-in-the-asia-continent" class="section level2">
-<h2>Testing significance of Whether the country is in the Asia continent</h2>
+<h2>Testing significance of whether the country is in the Asia continent</h2>
 <pre class="r"><code>#library(qvalue)
 data &lt;- covid
 unique(data$dateRep)</code></pre>
-<pre><code>  [1] &quot;16/09/2020&quot; &quot;15/09/2020&quot; &quot;14/09/2020&quot; &quot;13/09/2020&quot; &quot;12/09/2020&quot;
-  [6] &quot;11/09/2020&quot; &quot;10/09/2020&quot; &quot;09/09/2020&quot; &quot;08/09/2020&quot; &quot;07/09/2020&quot;
- [11] &quot;06/09/2020&quot; &quot;05/09/2020&quot; &quot;04/09/2020&quot; &quot;03/09/2020&quot; &quot;02/09/2020&quot;
- [16] &quot;01/09/2020&quot; &quot;31/08/2020&quot; &quot;30/08/2020&quot; &quot;29/08/2020&quot; &quot;28/08/2020&quot;
- [21] &quot;27/08/2020&quot; &quot;26/08/2020&quot; &quot;25/08/2020&quot; &quot;24/08/2020&quot; &quot;23/08/2020&quot;
- [26] &quot;22/08/2020&quot; &quot;21/08/2020&quot; &quot;20/08/2020&quot; &quot;19/08/2020&quot; &quot;18/08/2020&quot;
- [31] &quot;17/08/2020&quot; &quot;16/08/2020&quot; &quot;15/08/2020&quot; &quot;14/08/2020&quot; &quot;13/08/2020&quot;
- [36] &quot;12/08/2020&quot; &quot;11/08/2020&quot; &quot;10/08/2020&quot; &quot;09/08/2020&quot; &quot;08/08/2020&quot;
- [41] &quot;07/08/2020&quot; &quot;06/08/2020&quot; &quot;05/08/2020&quot; &quot;04/08/2020&quot; &quot;03/08/2020&quot;
- [46] &quot;02/08/2020&quot; &quot;01/08/2020&quot; &quot;31/07/2020&quot; &quot;30/07/2020&quot; &quot;29/07/2020&quot;
- [51] &quot;28/07/2020&quot; &quot;27/07/2020&quot; &quot;26/07/2020&quot; &quot;25/07/2020&quot; &quot;24/07/2020&quot;
- [56] &quot;23/07/2020&quot; &quot;22/07/2020&quot; &quot;21/07/2020&quot; &quot;20/07/2020&quot; &quot;19/07/2020&quot;
- [61] &quot;18/07/2020&quot; &quot;17/07/2020&quot; &quot;16/07/2020&quot; &quot;15/07/2020&quot; &quot;14/07/2020&quot;
- [66] &quot;13/07/2020&quot; &quot;12/07/2020&quot; &quot;11/07/2020&quot; &quot;10/07/2020&quot; &quot;09/07/2020&quot;
- [71] &quot;08/07/2020&quot; &quot;07/07/2020&quot; &quot;06/07/2020&quot; &quot;05/07/2020&quot; &quot;04/07/2020&quot;
- [76] &quot;03/07/2020&quot; &quot;02/07/2020&quot; &quot;01/07/2020&quot; &quot;30/06/2020&quot; &quot;29/06/2020&quot;
- [81] &quot;28/06/2020&quot; &quot;27/06/2020&quot; &quot;26/06/2020&quot; &quot;25/06/2020&quot; &quot;24/06/2020&quot;
- [86] &quot;23/06/2020&quot; &quot;22/06/2020&quot; &quot;21/06/2020&quot; &quot;20/06/2020&quot; &quot;19/06/2020&quot;
- [91] &quot;18/06/2020&quot; &quot;17/06/2020&quot; &quot;16/06/2020&quot; &quot;15/06/2020&quot; &quot;14/06/2020&quot;
- [96] &quot;13/06/2020&quot; &quot;12/06/2020&quot; &quot;11/06/2020&quot; &quot;10/06/2020&quot; &quot;09/06/2020&quot;
-[101] &quot;08/06/2020&quot; &quot;07/06/2020&quot; &quot;06/06/2020&quot; &quot;05/06/2020&quot; &quot;04/06/2020&quot;
-[106] &quot;03/06/2020&quot; &quot;02/06/2020&quot; &quot;01/06/2020&quot; &quot;31/05/2020&quot; &quot;30/05/2020&quot;
-[111] &quot;29/05/2020&quot; &quot;28/05/2020&quot; &quot;27/05/2020&quot; &quot;26/05/2020&quot; &quot;25/05/2020&quot;
-[116] &quot;24/05/2020&quot; &quot;23/05/2020&quot; &quot;22/05/2020&quot; &quot;21/05/2020&quot; &quot;20/05/2020&quot;
-[121] &quot;19/05/2020&quot; &quot;18/05/2020&quot; &quot;17/05/2020&quot; &quot;16/05/2020&quot; &quot;15/05/2020&quot;
-[126] &quot;14/05/2020&quot; &quot;13/05/2020&quot; &quot;12/05/2020&quot; &quot;11/05/2020&quot; &quot;10/05/2020&quot;
-[131] &quot;09/05/2020&quot; &quot;08/05/2020&quot; &quot;07/05/2020&quot; &quot;06/05/2020&quot; &quot;05/05/2020&quot;
-[136] &quot;04/05/2020&quot; &quot;03/05/2020&quot; &quot;02/05/2020&quot; &quot;01/05/2020&quot; &quot;30/04/2020&quot;
-[141] &quot;29/04/2020&quot; &quot;28/04/2020&quot; &quot;27/04/2020&quot; &quot;26/04/2020&quot; &quot;25/04/2020&quot;
-[146] &quot;24/04/2020&quot; &quot;23/04/2020&quot; &quot;22/04/2020&quot; &quot;21/04/2020&quot; &quot;20/04/2020&quot;
-[151] &quot;19/04/2020&quot; &quot;18/04/2020&quot; &quot;17/04/2020&quot; &quot;16/04/2020&quot; &quot;15/04/2020&quot;
-[156] &quot;14/04/2020&quot; &quot;13/04/2020&quot; &quot;12/04/2020&quot; &quot;11/04/2020&quot; &quot;10/04/2020&quot;
-[161] &quot;09/04/2020&quot; &quot;08/04/2020&quot; &quot;07/04/2020&quot; &quot;06/04/2020&quot; &quot;05/04/2020&quot;
-[166] &quot;04/04/2020&quot; &quot;03/04/2020&quot; &quot;02/04/2020&quot; &quot;01/04/2020&quot; &quot;31/03/2020&quot;
-[171] &quot;30/03/2020&quot; &quot;29/03/2020&quot; &quot;28/03/2020&quot; &quot;27/03/2020&quot; &quot;26/03/2020&quot;
-[176] &quot;25/03/2020&quot; &quot;24/03/2020&quot; &quot;23/03/2020&quot; &quot;22/03/2020&quot; &quot;21/03/2020&quot;
-[181] &quot;20/03/2020&quot; &quot;19/03/2020&quot; &quot;18/03/2020&quot; &quot;17/03/2020&quot; &quot;16/03/2020&quot;
-[186] &quot;15/03/2020&quot; &quot;11/03/2020&quot; &quot;08/03/2020&quot; &quot;02/03/2020&quot; &quot;01/03/2020&quot;
-[191] &quot;29/02/2020&quot; &quot;28/02/2020&quot; &quot;27/02/2020&quot; &quot;26/02/2020&quot; &quot;25/02/2020&quot;
-[196] &quot;24/02/2020&quot; &quot;23/02/2020&quot; &quot;22/02/2020&quot; &quot;21/02/2020&quot; &quot;20/02/2020&quot;
-[201] &quot;19/02/2020&quot; &quot;18/02/2020&quot; &quot;17/02/2020&quot; &quot;16/02/2020&quot; &quot;15/02/2020&quot;
-[206] &quot;14/02/2020&quot; &quot;13/02/2020&quot; &quot;12/02/2020&quot; &quot;11/02/2020&quot; &quot;10/02/2020&quot;
-[211] &quot;09/02/2020&quot; &quot;08/02/2020&quot; &quot;07/02/2020&quot; &quot;06/02/2020&quot; &quot;05/02/2020&quot;
-[216] &quot;04/02/2020&quot; &quot;03/02/2020&quot; &quot;02/02/2020&quot; &quot;01/02/2020&quot; &quot;31/01/2020&quot;
-[221] &quot;30/01/2020&quot; &quot;29/01/2020&quot; &quot;28/01/2020&quot; &quot;27/01/2020&quot; &quot;26/01/2020&quot;
-[226] &quot;25/01/2020&quot; &quot;24/01/2020&quot; &quot;23/01/2020&quot; &quot;22/01/2020&quot; &quot;21/01/2020&quot;
-[231] &quot;20/01/2020&quot; &quot;19/01/2020&quot; &quot;18/01/2020&quot; &quot;17/01/2020&quot; &quot;16/01/2020&quot;
-[236] &quot;15/01/2020&quot; &quot;14/01/2020&quot; &quot;13/01/2020&quot; &quot;12/01/2020&quot; &quot;11/01/2020&quot;
-[241] &quot;10/01/2020&quot; &quot;09/01/2020&quot; &quot;08/01/2020&quot; &quot;07/01/2020&quot; &quot;06/01/2020&quot;
-[246] &quot;05/01/2020&quot; &quot;04/01/2020&quot; &quot;03/01/2020&quot; &quot;02/01/2020&quot; &quot;01/01/2020&quot;
-[251] &quot;31/12/2019&quot; &quot;14/03/2020&quot; &quot;13/03/2020&quot; &quot;12/03/2020&quot; &quot;10/03/2020&quot;
-[256] &quot;09/03/2020&quot; &quot;06/03/2020&quot; &quot;05/03/2020&quot; &quot;04/03/2020&quot; &quot;03/03/2020&quot;
-[261] &quot;07/03/2020&quot;</code></pre>
+<pre><code>  [1] &quot;18/09/2020&quot; &quot;17/09/2020&quot; &quot;16/09/2020&quot; &quot;15/09/2020&quot; &quot;14/09/2020&quot;
+  [6] &quot;13/09/2020&quot; &quot;12/09/2020&quot; &quot;11/09/2020&quot; &quot;10/09/2020&quot; &quot;09/09/2020&quot;
+ [11] &quot;08/09/2020&quot; &quot;07/09/2020&quot; &quot;06/09/2020&quot; &quot;05/09/2020&quot; &quot;04/09/2020&quot;
+ [16] &quot;03/09/2020&quot; &quot;02/09/2020&quot; &quot;01/09/2020&quot; &quot;31/08/2020&quot; &quot;30/08/2020&quot;
+ [21] &quot;29/08/2020&quot; &quot;28/08/2020&quot; &quot;27/08/2020&quot; &quot;26/08/2020&quot; &quot;25/08/2020&quot;
+ [26] &quot;24/08/2020&quot; &quot;23/08/2020&quot; &quot;22/08/2020&quot; &quot;21/08/2020&quot; &quot;20/08/2020&quot;
+ [31] &quot;19/08/2020&quot; &quot;18/08/2020&quot; &quot;17/08/2020&quot; &quot;16/08/2020&quot; &quot;15/08/2020&quot;
+ [36] &quot;14/08/2020&quot; &quot;13/08/2020&quot; &quot;12/08/2020&quot; &quot;11/08/2020&quot; &quot;10/08/2020&quot;
+ [41] &quot;09/08/2020&quot; &quot;08/08/2020&quot; &quot;07/08/2020&quot; &quot;06/08/2020&quot; &quot;05/08/2020&quot;
+ [46] &quot;04/08/2020&quot; &quot;03/08/2020&quot; &quot;02/08/2020&quot; &quot;01/08/2020&quot; &quot;31/07/2020&quot;
+ [51] &quot;30/07/2020&quot; &quot;29/07/2020&quot; &quot;28/07/2020&quot; &quot;27/07/2020&quot; &quot;26/07/2020&quot;
+ [56] &quot;25/07/2020&quot; &quot;24/07/2020&quot; &quot;23/07/2020&quot; &quot;22/07/2020&quot; &quot;21/07/2020&quot;
+ [61] &quot;20/07/2020&quot; &quot;19/07/2020&quot; &quot;18/07/2020&quot; &quot;17/07/2020&quot; &quot;16/07/2020&quot;
+ [66] &quot;15/07/2020&quot; &quot;14/07/2020&quot; &quot;13/07/2020&quot; &quot;12/07/2020&quot; &quot;11/07/2020&quot;
+ [71] &quot;10/07/2020&quot; &quot;09/07/2020&quot; &quot;08/07/2020&quot; &quot;07/07/2020&quot; &quot;06/07/2020&quot;
+ [76] &quot;05/07/2020&quot; &quot;04/07/2020&quot; &quot;03/07/2020&quot; &quot;02/07/2020&quot; &quot;01/07/2020&quot;
+ [81] &quot;30/06/2020&quot; &quot;29/06/2020&quot; &quot;28/06/2020&quot; &quot;27/06/2020&quot; &quot;26/06/2020&quot;
+ [86] &quot;25/06/2020&quot; &quot;24/06/2020&quot; &quot;23/06/2020&quot; &quot;22/06/2020&quot; &quot;21/06/2020&quot;
+ [91] &quot;20/06/2020&quot; &quot;19/06/2020&quot; &quot;18/06/2020&quot; &quot;17/06/2020&quot; &quot;16/06/2020&quot;
+ [96] &quot;15/06/2020&quot; &quot;14/06/2020&quot; &quot;13/06/2020&quot; &quot;12/06/2020&quot; &quot;11/06/2020&quot;
+[101] &quot;10/06/2020&quot; &quot;09/06/2020&quot; &quot;08/06/2020&quot; &quot;07/06/2020&quot; &quot;06/06/2020&quot;
+[106] &quot;05/06/2020&quot; &quot;04/06/2020&quot; &quot;03/06/2020&quot; &quot;02/06/2020&quot; &quot;01/06/2020&quot;
+[111] &quot;31/05/2020&quot; &quot;30/05/2020&quot; &quot;29/05/2020&quot; &quot;28/05/2020&quot; &quot;27/05/2020&quot;
+[116] &quot;26/05/2020&quot; &quot;25/05/2020&quot; &quot;24/05/2020&quot; &quot;23/05/2020&quot; &quot;22/05/2020&quot;
+[121] &quot;21/05/2020&quot; &quot;20/05/2020&quot; &quot;19/05/2020&quot; &quot;18/05/2020&quot; &quot;17/05/2020&quot;
+[126] &quot;16/05/2020&quot; &quot;15/05/2020&quot; &quot;14/05/2020&quot; &quot;13/05/2020&quot; &quot;12/05/2020&quot;
+[131] &quot;11/05/2020&quot; &quot;10/05/2020&quot; &quot;09/05/2020&quot; &quot;08/05/2020&quot; &quot;07/05/2020&quot;
+[136] &quot;06/05/2020&quot; &quot;05/05/2020&quot; &quot;04/05/2020&quot; &quot;03/05/2020&quot; &quot;02/05/2020&quot;
+[141] &quot;01/05/2020&quot; &quot;30/04/2020&quot; &quot;29/04/2020&quot; &quot;28/04/2020&quot; &quot;27/04/2020&quot;
+[146] &quot;26/04/2020&quot; &quot;25/04/2020&quot; &quot;24/04/2020&quot; &quot;23/04/2020&quot; &quot;22/04/2020&quot;
+[151] &quot;21/04/2020&quot; &quot;20/04/2020&quot; &quot;19/04/2020&quot; &quot;18/04/2020&quot; &quot;17/04/2020&quot;
+[156] &quot;16/04/2020&quot; &quot;15/04/2020&quot; &quot;14/04/2020&quot; &quot;13/04/2020&quot; &quot;12/04/2020&quot;
+[161] &quot;11/04/2020&quot; &quot;10/04/2020&quot; &quot;09/04/2020&quot; &quot;08/04/2020&quot; &quot;07/04/2020&quot;
+[166] &quot;06/04/2020&quot; &quot;05/04/2020&quot; &quot;04/04/2020&quot; &quot;03/04/2020&quot; &quot;02/04/2020&quot;
+[171] &quot;01/04/2020&quot; &quot;31/03/2020&quot; &quot;30/03/2020&quot; &quot;29/03/2020&quot; &quot;28/03/2020&quot;
+[176] &quot;27/03/2020&quot; &quot;26/03/2020&quot; &quot;25/03/2020&quot; &quot;24/03/2020&quot; &quot;23/03/2020&quot;
+[181] &quot;22/03/2020&quot; &quot;21/03/2020&quot; &quot;20/03/2020&quot; &quot;19/03/2020&quot; &quot;18/03/2020&quot;
+[186] &quot;17/03/2020&quot; &quot;16/03/2020&quot; &quot;15/03/2020&quot; &quot;11/03/2020&quot; &quot;08/03/2020&quot;
+[191] &quot;02/03/2020&quot; &quot;01/03/2020&quot; &quot;29/02/2020&quot; &quot;28/02/2020&quot; &quot;27/02/2020&quot;
+[196] &quot;26/02/2020&quot; &quot;25/02/2020&quot; &quot;24/02/2020&quot; &quot;23/02/2020&quot; &quot;22/02/2020&quot;
+[201] &quot;21/02/2020&quot; &quot;20/02/2020&quot; &quot;19/02/2020&quot; &quot;18/02/2020&quot; &quot;17/02/2020&quot;
+[206] &quot;16/02/2020&quot; &quot;15/02/2020&quot; &quot;14/02/2020&quot; &quot;13/02/2020&quot; &quot;12/02/2020&quot;
+[211] &quot;11/02/2020&quot; &quot;10/02/2020&quot; &quot;09/02/2020&quot; &quot;08/02/2020&quot; &quot;07/02/2020&quot;
+[216] &quot;06/02/2020&quot; &quot;05/02/2020&quot; &quot;04/02/2020&quot; &quot;03/02/2020&quot; &quot;02/02/2020&quot;
+[221] &quot;01/02/2020&quot; &quot;31/01/2020&quot; &quot;30/01/2020&quot; &quot;29/01/2020&quot; &quot;28/01/2020&quot;
+[226] &quot;27/01/2020&quot; &quot;26/01/2020&quot; &quot;25/01/2020&quot; &quot;24/01/2020&quot; &quot;23/01/2020&quot;
+[231] &quot;22/01/2020&quot; &quot;21/01/2020&quot; &quot;20/01/2020&quot; &quot;19/01/2020&quot; &quot;18/01/2020&quot;
+[236] &quot;17/01/2020&quot; &quot;16/01/2020&quot; &quot;15/01/2020&quot; &quot;14/01/2020&quot; &quot;13/01/2020&quot;
+[241] &quot;12/01/2020&quot; &quot;11/01/2020&quot; &quot;10/01/2020&quot; &quot;09/01/2020&quot; &quot;08/01/2020&quot;
+[246] &quot;07/01/2020&quot; &quot;06/01/2020&quot; &quot;05/01/2020&quot; &quot;04/01/2020&quot; &quot;03/01/2020&quot;
+[251] &quot;02/01/2020&quot; &quot;01/01/2020&quot; &quot;31/12/2019&quot; &quot;14/03/2020&quot; &quot;13/03/2020&quot;
+[256] &quot;12/03/2020&quot; &quot;10/03/2020&quot; &quot;09/03/2020&quot; &quot;06/03/2020&quot; &quot;05/03/2020&quot;
+[261] &quot;04/03/2020&quot; &quot;03/03/2020&quot; &quot;07/03/2020&quot;</code></pre>
 <pre class="r"><code>dates&lt;-unique(data$dateRep) #261 days
 length(dates)</code></pre>
-<pre><code>[1] 261</code></pre>
+<pre><code>[1] 263</code></pre>
 <pre class="r"><code># make a loop through all the dates
 pvals_df &lt;- data.frame(dateRep=character(),
                  pval=double(),
@@ -1224,7 +1263,9 @@ for(i in 1:length(dates)){
   pvals_df &lt;- rbind(pvals_df, c(date,pval,pval.adjust))
   counter &lt;- counter +1
 }</code></pre>
-<pre><code>[1] &quot;16/09/2020&quot;
+<pre><code>[1] &quot;18/09/2020&quot;
+[1] &quot;17/09/2020&quot;
+[1] &quot;16/09/2020&quot;
 [1] &quot;15/09/2020&quot;
 [1] &quot;14/09/2020&quot;
 [1] &quot;13/09/2020&quot;
@@ -1467,132 +1508,134 @@ for(i in 1:length(dates)){
 <pre class="r"><code>colnames(pvals_df) &lt;- c(&#39;dateRep&#39;,&#39;pval&#39;,&#39;qval&#39;)
 head(pvals_df)</code></pre>
 <pre><code>     dateRep               pval qval
-1 16/09/2020 0.0174563672978543    1
-2 15/09/2020 0.0225220688008897    1
-3 14/09/2020 0.0231030592809335    1
-4 13/09/2020 0.0270207882418063    1
-5 12/09/2020 0.0302168011097824    1
-6 11/09/2020 0.0284397432241684    1</code></pre>
+1 18/09/2020 0.0169981829682797    1
+2 17/09/2020 0.0189490982393138    1
+3 16/09/2020 0.0183756133948545    1
+4 15/09/2020 0.0225374901994717    1
+5 14/09/2020 0.0231154715168263    1
+6 13/09/2020 0.0270341929912829    1</code></pre>
 <p>Show the significant dates when continent correlates with number of covid19 cases.</p>
 <pre class="r"><code># significant dates with p-value (un-adjusted)
 pvals_df %&gt;% filter(pval &lt; 0.05)</code></pre>
 <pre><code>       dateRep                pval              qval
-1   16/09/2020  0.0174563672978543                 1
-2   15/09/2020  0.0225220688008897                 1
-3   14/09/2020  0.0231030592809335                 1
-4   13/09/2020  0.0270207882418063                 1
-5   12/09/2020  0.0302168011097824                 1
-6   11/09/2020  0.0284397432241684                 1
-7   10/09/2020  0.0338640770776833                 1
-8   09/09/2020  0.0374768289014247                 1
-9   08/09/2020  0.0365794284785288                 1
-10  07/09/2020  0.0461354587758811                 1
-11  13/08/2020  0.0423575811784294                 1
-12  12/08/2020  0.0328715059978005                 1
-13  11/08/2020  0.0219900484103045                 1
-14  10/08/2020  0.0209444956283799                 1
-15  09/08/2020  0.0176172484189988                 1
-16  08/08/2020  0.0124330704936922                 1
-17  07/08/2020  0.0126233202076352                 1
-18  06/08/2020  0.0127365503110123                 1
-19  05/08/2020  0.0126804909465067                 1
-20  04/08/2020  0.0104029524670626                 1
-21  03/08/2020  0.0092315079388755                 1
-22  02/08/2020 0.00960259217636125                 1
-23  01/08/2020 0.00505419025691876                 1
-24  31/07/2020 0.00267196836133187 0.697383742307619
-25  30/07/2020 0.00282854794690754 0.738251014142869
-26  29/07/2020 0.00246621412092756 0.643681885562094
-27  28/07/2020 0.00272289006891392 0.710674307986533
-28  27/07/2020 0.00289621730106069 0.755912715576841
-29  26/07/2020 0.00272047373712363 0.710043645389267
-30  25/07/2020 0.00298452160266589 0.778960138295798
-31  24/07/2020  0.0018089853900384 0.472145186800022
-32  23/07/2020 0.00153384637633721 0.400333904224011
-33  22/07/2020 0.00153679531200754 0.401103576433969
-34  21/07/2020 0.00183809171127657 0.479741936643184
-35  20/07/2020 0.00217425639735185 0.567480919708832
-36  19/07/2020  0.0019891490438962 0.519167900456908
-37  18/07/2020 0.00185527152754231 0.484225868688542
-38  17/07/2020 0.00337803360387927  0.88166677061249
-39  16/07/2020 0.00396122358613444                 1
-40  15/07/2020 0.00391998092548008                 1
-41  14/07/2020  0.0028963231231979 0.755940335154653
-42  13/07/2020 0.00247083444664817 0.644887790575173
-43  12/07/2020 0.00246415661314754 0.643144876031507
-44  11/07/2020 0.00287807369049566 0.751177233219368
-45  10/07/2020 0.00293768940726664 0.766736935296593
-46  09/07/2020 0.00307092166801016 0.801510555350652
-47  08/07/2020  0.0027602314319928 0.720420403750121
-48  07/07/2020 0.00256492087763442 0.669444349062583
-49  06/07/2020 0.00240381927226687 0.627396830061653
-50  05/07/2020 0.00235113886612921 0.613647244059723
-51  04/07/2020 0.00266875589838039 0.696545289477281
-52  03/07/2020 0.00307673817764851  0.80302866436626
-53  02/07/2020 0.00247217206001788 0.645236907664666
-54  01/07/2020 0.00445241030228812                 1
-55  30/06/2020 0.00692523615761877                 1
-56  29/06/2020 0.00740656272484298                 1
-57  28/06/2020 0.00774199432606061                 1
-58  27/06/2020 0.00704976487320036                 1
-59  26/06/2020 0.00744723947390123                 1
-60  25/06/2020 0.00782227241112448                 1
-61  24/06/2020  0.0104184135189367                 1
-62  23/06/2020  0.0104324552176925                 1
-63  22/06/2020 0.00968136481032046                 1
-64  21/06/2020 0.00943275050866543                 1
-65  20/06/2020  0.0088989308329544                 1
-66  19/06/2020 0.00819992185453886                 1
-67  18/06/2020 0.00874580992425998                 1
-68  17/06/2020 0.00550462504492795                 1
-69  16/06/2020 0.00573547830958187                 1
-70  15/06/2020 0.00570739698154537                 1
-71  14/06/2020 0.00526721781436839                 1
-72  13/06/2020 0.00588532136960387                 1
-73  12/06/2020 0.00575210654961308                 1
-74  11/06/2020 0.00577280464563395                 1
-75  10/06/2020 0.00527490382971311                 1
-76  09/06/2020 0.00697085381853353                 1
-77  08/06/2020 0.00831268610200338                 1
-78  07/06/2020 0.00807492898099559                 1
-79  06/06/2020 0.00872966980083836                 1
-80  05/06/2020 0.00877328396361695                 1
-81  04/06/2020 0.00878027368640871                 1
-82  03/06/2020 0.00908516289975003                 1
-83  02/06/2020  0.0085821987367709                 1
-84  01/06/2020 0.00875166246000619                 1
-85  31/05/2020 0.00931488086627997                 1
-86  30/05/2020 0.00735497689055948                 1
-87  29/05/2020 0.00678883575329951                 1
-88  28/05/2020 0.00640442752857974                 1
-89  27/05/2020 0.00613894979823806                 1
-90  26/05/2020 0.00443022167165377                 1
-91  25/05/2020 0.00339834229174829 0.886967338146305
-92  24/05/2020  0.0033164165945503 0.865584731177628
-93  23/05/2020 0.00263147392363119 0.686814694067741
-94  22/05/2020  0.0025418847778323 0.663431927014229
-95  21/05/2020 0.00255400577327525 0.666595506824841
-96  20/05/2020  0.0025219321359704 0.658224287488274
-97  19/05/2020  0.0026193530046805 0.683651134221611
-98  18/05/2020 0.00368748258432658 0.962432954509237
-99  17/05/2020 0.00382549188761736  0.99845338266813
-100 16/05/2020 0.00429598142633167                 1
-101 15/05/2020 0.00540378602442901                 1
-102 14/05/2020 0.00735343874353492                 1
-103 13/05/2020  0.0113047338129873                 1
-104 12/05/2020  0.0138797046580056                 1
-105 11/05/2020  0.0153949420409907                 1
-106 10/05/2020   0.024897476281543                 1
-107 09/05/2020  0.0262303756281557                 1
-108 08/05/2020  0.0301421774507976                 1
-109 07/05/2020  0.0272722716818667                 1
-110 06/05/2020  0.0185864833371064                 1
-111 05/05/2020  0.0219162061218025                 1
-112 04/05/2020  0.0207806474215311                 1
-113 03/05/2020  0.0228830592069406                 1
-114 02/05/2020   0.028782233923821                 1
-115 01/05/2020  0.0329897426995488                 1
-116 30/04/2020  0.0439824924939714                 1</code></pre>
+1   18/09/2020  0.0169981829682797                 1
+2   17/09/2020  0.0189490982393138                 1
+3   16/09/2020  0.0183756133948545                 1
+4   15/09/2020  0.0225374901994717                 1
+5   14/09/2020  0.0231154715168263                 1
+6   13/09/2020  0.0270341929912829                 1
+7   12/09/2020  0.0302429024172458                 1
+8   11/09/2020   0.028459345853256                 1
+9   10/09/2020  0.0338808489515315                 1
+10  09/09/2020  0.0374677231573009                 1
+11  08/09/2020   0.036587382278785                 1
+12  07/09/2020   0.046149174632394                 1
+13  13/08/2020  0.0423087048815556                 1
+14  12/08/2020  0.0328423757019565                 1
+15  11/08/2020  0.0219780858645272                 1
+16  10/08/2020  0.0209349211889816                 1
+17  09/08/2020  0.0176072558496081                 1
+18  08/08/2020  0.0124296508646161                 1
+19  07/08/2020  0.0126253507191756                 1
+20  06/08/2020  0.0127390029269697                 1
+21  05/08/2020  0.0126849832299627                 1
+22  04/08/2020  0.0104079265362233                 1
+23  03/08/2020 0.00923420572201018                 1
+24  02/08/2020 0.00960768639129412                 1
+25  01/08/2020   0.005057847745795                 1
+26  31/07/2020 0.00267313514573749 0.703034543328959
+27  30/07/2020  0.0028299372141978 0.744273487334021
+28  29/07/2020 0.00246816860611355 0.649128343407865
+29  28/07/2020 0.00272392227389165 0.716391558033505
+30  27/07/2020 0.00289655497495194 0.761793958412359
+31  26/07/2020 0.00272264299833709 0.716055108562654
+32  25/07/2020 0.00298526718744972 0.785125270299276
+33  24/07/2020 0.00180919661834144 0.475818710623799
+34  23/07/2020 0.00153382352243123 0.403395586399413
+35  22/07/2020 0.00153690412501219 0.404205784878206
+36  21/07/2020 0.00183774656210692  0.48332734583412
+37  20/07/2020 0.00217407553693808 0.571781866214714
+38  19/07/2020 0.00198824681631652 0.522908912691246
+39  18/07/2020 0.00185416475064671 0.487645329420086
+40  17/07/2020 0.00337527381143568 0.887697012407585
+41  16/07/2020 0.00395682302989507                 1
+42  15/07/2020 0.00391372621212245                 1
+43  14/07/2020 0.00289334623944853 0.760950060974964
+44  13/07/2020 0.00246638800716284 0.648660045883827
+45  12/07/2020 0.00245442950185188 0.645514958987044
+46  11/07/2020 0.00286302176355948 0.752974723816144
+47  10/07/2020 0.00291480687231965 0.766594207420068
+48  09/07/2020 0.00304639664491742 0.801202317613281
+49  08/07/2020 0.00274716271843717 0.722503794948975
+50  07/07/2020  0.0025649236618969 0.674574923078884
+51  06/07/2020 0.00239653042987862 0.630287503058078
+52  05/07/2020  0.0023392803747781  0.61523073856664
+53  04/07/2020 0.00264686110401385 0.696124470355643
+54  03/07/2020 0.00305185064194804 0.802636718832335
+55  02/07/2020 0.00246019311670671 0.647030789693865
+56  01/07/2020 0.00445332551909289                 1
+57  30/06/2020 0.00692363535829001                 1
+58  29/06/2020 0.00738845162031387                 1
+59  28/06/2020 0.00773326592536168                 1
+60  27/06/2020 0.00704872758927945                 1
+61  26/06/2020 0.00746220132909041                 1
+62  25/06/2020 0.00784480523127901                 1
+63  24/06/2020  0.0104267322638104                 1
+64  23/06/2020  0.0104217613808689                 1
+65  22/06/2020 0.00967547413719724                 1
+66  21/06/2020 0.00943675691556241                 1
+67  20/06/2020 0.00892639854494031                 1
+68  19/06/2020 0.00822176892648825                 1
+69  18/06/2020 0.00876277676513944                 1
+70  17/06/2020 0.00550660064639635                 1
+71  16/06/2020 0.00574230965308227                 1
+72  15/06/2020  0.0057302824032843                 1
+73  14/06/2020  0.0052856679387079                 1
+74  13/06/2020 0.00590253285414894                 1
+75  12/06/2020 0.00577286714043881                 1
+76  11/06/2020 0.00577847140172955                 1
+77  10/06/2020 0.00528017838293818                 1
+78  09/06/2020 0.00697958640085771                 1
+79  08/06/2020 0.00832650907327366                 1
+80  07/06/2020 0.00809597326566297                 1
+81  06/06/2020 0.00874280537044135                 1
+82  05/06/2020 0.00878137912388203                 1
+83  04/06/2020 0.00878498675565129                 1
+84  03/06/2020 0.00909015923854723                 1
+85  02/06/2020 0.00858138263083106                 1
+86  01/06/2020 0.00875385952297626                 1
+87  31/05/2020 0.00931749406418753                 1
+88  30/05/2020 0.00735821334989238                 1
+89  29/05/2020 0.00679183708345738                 1
+90  28/05/2020 0.00640425440738171                 1
+91  27/05/2020 0.00614003371927764                 1
+92  26/05/2020 0.00442866275131081                 1
+93  25/05/2020 0.00339633156413847 0.893235201368417
+94  24/05/2020 0.00331305895406996   0.8713345049204
+95  23/05/2020 0.00262814935128225 0.691203279387233
+96  22/05/2020 0.00254310309919836 0.668836115089168
+97  21/05/2020 0.00255420071509364 0.671754788069627
+98  20/05/2020 0.00252159060421705 0.663178328909085
+99  19/05/2020 0.00262004343436702 0.689071423238526
+100 18/05/2020 0.00368941743753206 0.970316786070931
+101 17/05/2020 0.00383009048641912                 1
+102 16/05/2020 0.00429904148981174                 1
+103 15/05/2020 0.00540149896047742                 1
+104 14/05/2020 0.00735960528372101                 1
+105 13/05/2020  0.0112956431141527                 1
+106 12/05/2020  0.0138738658656919                 1
+107 11/05/2020  0.0154051490764054                 1
+108 10/05/2020  0.0248948940582437                 1
+109 09/05/2020  0.0262337971971187                 1
+110 08/05/2020  0.0301473159876254                 1
+111 07/05/2020   0.027270337567645                 1
+112 06/05/2020  0.0185918560535316                 1
+113 05/05/2020   0.021879067226089                 1
+114 04/05/2020   0.020754775964667                 1
+115 03/05/2020  0.0228807816603099                 1
+116 02/05/2020  0.0287767645719595                 1
+117 01/05/2020  0.0329930218701971                 1
+118 30/04/2020  0.0439833386712127                 1</code></pre>
 <pre class="r"><code># significant dates with q-value (fdr correction)
 pvals_df %&gt;% filter(qval &lt; 0.05)</code></pre>
 <pre><code>[1] dateRep pval    qval   
@@ -1632,7 +1675,7 @@ data1$continentExp</code></pre>
 [197] &quot;America&quot; &quot;America&quot; &quot;America&quot; &quot;Asia&quot;    &quot;America&quot; &quot;Asia&quot;    &quot;Africa&quot; 
 [204] &quot;Asia&quot;    &quot;Africa&quot;  &quot;Africa&quot; </code></pre>
 <pre class="r"><code>ggplot(data1, aes_string(x=&#39;continentExp&#39;,y=&#39;Cumulative_number_for_14_days_of_COVID.19_cases_per_100000&#39;)) + geom_boxplot(aes(fill=continentExp))</code></pre>
-<p><img src="figure/P-hacking_COVID-19_c.elegans.Rmd/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/P-hacking_COVID-19_c.elegans.Rmd/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div id="results" class="section level3">
 <h3>(1) Results:</h3>
 <p>In the Asia continent, continent factor had spurious significant correlations in 116 dates (without multiple testing adjustments). We know these dates are spurious because after FDR correction whether the country is in the Asia continent did not show any significant correlation to the number of covid-19 cases.</p>
@@ -1657,62 +1700,62 @@ lmp &lt;- function (modelobject) {
 #library(qvalue)
 data &lt;- covid
 unique(data$dateRep)</code></pre>
-<pre><code>  [1] &quot;16/09/2020&quot; &quot;15/09/2020&quot; &quot;14/09/2020&quot; &quot;13/09/2020&quot; &quot;12/09/2020&quot;
-  [6] &quot;11/09/2020&quot; &quot;10/09/2020&quot; &quot;09/09/2020&quot; &quot;08/09/2020&quot; &quot;07/09/2020&quot;
- [11] &quot;06/09/2020&quot; &quot;05/09/2020&quot; &quot;04/09/2020&quot; &quot;03/09/2020&quot; &quot;02/09/2020&quot;
- [16] &quot;01/09/2020&quot; &quot;31/08/2020&quot; &quot;30/08/2020&quot; &quot;29/08/2020&quot; &quot;28/08/2020&quot;
- [21] &quot;27/08/2020&quot; &quot;26/08/2020&quot; &quot;25/08/2020&quot; &quot;24/08/2020&quot; &quot;23/08/2020&quot;
- [26] &quot;22/08/2020&quot; &quot;21/08/2020&quot; &quot;20/08/2020&quot; &quot;19/08/2020&quot; &quot;18/08/2020&quot;
- [31] &quot;17/08/2020&quot; &quot;16/08/2020&quot; &quot;15/08/2020&quot; &quot;14/08/2020&quot; &quot;13/08/2020&quot;
- [36] &quot;12/08/2020&quot; &quot;11/08/2020&quot; &quot;10/08/2020&quot; &quot;09/08/2020&quot; &quot;08/08/2020&quot;
- [41] &quot;07/08/2020&quot; &quot;06/08/2020&quot; &quot;05/08/2020&quot; &quot;04/08/2020&quot; &quot;03/08/2020&quot;
- [46] &quot;02/08/2020&quot; &quot;01/08/2020&quot; &quot;31/07/2020&quot; &quot;30/07/2020&quot; &quot;29/07/2020&quot;
- [51] &quot;28/07/2020&quot; &quot;27/07/2020&quot; &quot;26/07/2020&quot; &quot;25/07/2020&quot; &quot;24/07/2020&quot;
- [56] &quot;23/07/2020&quot; &quot;22/07/2020&quot; &quot;21/07/2020&quot; &quot;20/07/2020&quot; &quot;19/07/2020&quot;
- [61] &quot;18/07/2020&quot; &quot;17/07/2020&quot; &quot;16/07/2020&quot; &quot;15/07/2020&quot; &quot;14/07/2020&quot;
- [66] &quot;13/07/2020&quot; &quot;12/07/2020&quot; &quot;11/07/2020&quot; &quot;10/07/2020&quot; &quot;09/07/2020&quot;
- [71] &quot;08/07/2020&quot; &quot;07/07/2020&quot; &quot;06/07/2020&quot; &quot;05/07/2020&quot; &quot;04/07/2020&quot;
- [76] &quot;03/07/2020&quot; &quot;02/07/2020&quot; &quot;01/07/2020&quot; &quot;30/06/2020&quot; &quot;29/06/2020&quot;
- [81] &quot;28/06/2020&quot; &quot;27/06/2020&quot; &quot;26/06/2020&quot; &quot;25/06/2020&quot; &quot;24/06/2020&quot;
- [86] &quot;23/06/2020&quot; &quot;22/06/2020&quot; &quot;21/06/2020&quot; &quot;20/06/2020&quot; &quot;19/06/2020&quot;
- [91] &quot;18/06/2020&quot; &quot;17/06/2020&quot; &quot;16/06/2020&quot; &quot;15/06/2020&quot; &quot;14/06/2020&quot;
- [96] &quot;13/06/2020&quot; &quot;12/06/2020&quot; &quot;11/06/2020&quot; &quot;10/06/2020&quot; &quot;09/06/2020&quot;
-[101] &quot;08/06/2020&quot; &quot;07/06/2020&quot; &quot;06/06/2020&quot; &quot;05/06/2020&quot; &quot;04/06/2020&quot;
-[106] &quot;03/06/2020&quot; &quot;02/06/2020&quot; &quot;01/06/2020&quot; &quot;31/05/2020&quot; &quot;30/05/2020&quot;
-[111] &quot;29/05/2020&quot; &quot;28/05/2020&quot; &quot;27/05/2020&quot; &quot;26/05/2020&quot; &quot;25/05/2020&quot;
-[116] &quot;24/05/2020&quot; &quot;23/05/2020&quot; &quot;22/05/2020&quot; &quot;21/05/2020&quot; &quot;20/05/2020&quot;
-[121] &quot;19/05/2020&quot; &quot;18/05/2020&quot; &quot;17/05/2020&quot; &quot;16/05/2020&quot; &quot;15/05/2020&quot;
-[126] &quot;14/05/2020&quot; &quot;13/05/2020&quot; &quot;12/05/2020&quot; &quot;11/05/2020&quot; &quot;10/05/2020&quot;
-[131] &quot;09/05/2020&quot; &quot;08/05/2020&quot; &quot;07/05/2020&quot; &quot;06/05/2020&quot; &quot;05/05/2020&quot;
-[136] &quot;04/05/2020&quot; &quot;03/05/2020&quot; &quot;02/05/2020&quot; &quot;01/05/2020&quot; &quot;30/04/2020&quot;
-[141] &quot;29/04/2020&quot; &quot;28/04/2020&quot; &quot;27/04/2020&quot; &quot;26/04/2020&quot; &quot;25/04/2020&quot;
-[146] &quot;24/04/2020&quot; &quot;23/04/2020&quot; &quot;22/04/2020&quot; &quot;21/04/2020&quot; &quot;20/04/2020&quot;
-[151] &quot;19/04/2020&quot; &quot;18/04/2020&quot; &quot;17/04/2020&quot; &quot;16/04/2020&quot; &quot;15/04/2020&quot;
-[156] &quot;14/04/2020&quot; &quot;13/04/2020&quot; &quot;12/04/2020&quot; &quot;11/04/2020&quot; &quot;10/04/2020&quot;
-[161] &quot;09/04/2020&quot; &quot;08/04/2020&quot; &quot;07/04/2020&quot; &quot;06/04/2020&quot; &quot;05/04/2020&quot;
-[166] &quot;04/04/2020&quot; &quot;03/04/2020&quot; &quot;02/04/2020&quot; &quot;01/04/2020&quot; &quot;31/03/2020&quot;
-[171] &quot;30/03/2020&quot; &quot;29/03/2020&quot; &quot;28/03/2020&quot; &quot;27/03/2020&quot; &quot;26/03/2020&quot;
-[176] &quot;25/03/2020&quot; &quot;24/03/2020&quot; &quot;23/03/2020&quot; &quot;22/03/2020&quot; &quot;21/03/2020&quot;
-[181] &quot;20/03/2020&quot; &quot;19/03/2020&quot; &quot;18/03/2020&quot; &quot;17/03/2020&quot; &quot;16/03/2020&quot;
-[186] &quot;15/03/2020&quot; &quot;11/03/2020&quot; &quot;08/03/2020&quot; &quot;02/03/2020&quot; &quot;01/03/2020&quot;
-[191] &quot;29/02/2020&quot; &quot;28/02/2020&quot; &quot;27/02/2020&quot; &quot;26/02/2020&quot; &quot;25/02/2020&quot;
-[196] &quot;24/02/2020&quot; &quot;23/02/2020&quot; &quot;22/02/2020&quot; &quot;21/02/2020&quot; &quot;20/02/2020&quot;
-[201] &quot;19/02/2020&quot; &quot;18/02/2020&quot; &quot;17/02/2020&quot; &quot;16/02/2020&quot; &quot;15/02/2020&quot;
-[206] &quot;14/02/2020&quot; &quot;13/02/2020&quot; &quot;12/02/2020&quot; &quot;11/02/2020&quot; &quot;10/02/2020&quot;
-[211] &quot;09/02/2020&quot; &quot;08/02/2020&quot; &quot;07/02/2020&quot; &quot;06/02/2020&quot; &quot;05/02/2020&quot;
-[216] &quot;04/02/2020&quot; &quot;03/02/2020&quot; &quot;02/02/2020&quot; &quot;01/02/2020&quot; &quot;31/01/2020&quot;
-[221] &quot;30/01/2020&quot; &quot;29/01/2020&quot; &quot;28/01/2020&quot; &quot;27/01/2020&quot; &quot;26/01/2020&quot;
-[226] &quot;25/01/2020&quot; &quot;24/01/2020&quot; &quot;23/01/2020&quot; &quot;22/01/2020&quot; &quot;21/01/2020&quot;
-[231] &quot;20/01/2020&quot; &quot;19/01/2020&quot; &quot;18/01/2020&quot; &quot;17/01/2020&quot; &quot;16/01/2020&quot;
-[236] &quot;15/01/2020&quot; &quot;14/01/2020&quot; &quot;13/01/2020&quot; &quot;12/01/2020&quot; &quot;11/01/2020&quot;
-[241] &quot;10/01/2020&quot; &quot;09/01/2020&quot; &quot;08/01/2020&quot; &quot;07/01/2020&quot; &quot;06/01/2020&quot;
-[246] &quot;05/01/2020&quot; &quot;04/01/2020&quot; &quot;03/01/2020&quot; &quot;02/01/2020&quot; &quot;01/01/2020&quot;
-[251] &quot;31/12/2019&quot; &quot;14/03/2020&quot; &quot;13/03/2020&quot; &quot;12/03/2020&quot; &quot;10/03/2020&quot;
-[256] &quot;09/03/2020&quot; &quot;06/03/2020&quot; &quot;05/03/2020&quot; &quot;04/03/2020&quot; &quot;03/03/2020&quot;
-[261] &quot;07/03/2020&quot;</code></pre>
+<pre><code>  [1] &quot;18/09/2020&quot; &quot;17/09/2020&quot; &quot;16/09/2020&quot; &quot;15/09/2020&quot; &quot;14/09/2020&quot;
+  [6] &quot;13/09/2020&quot; &quot;12/09/2020&quot; &quot;11/09/2020&quot; &quot;10/09/2020&quot; &quot;09/09/2020&quot;
+ [11] &quot;08/09/2020&quot; &quot;07/09/2020&quot; &quot;06/09/2020&quot; &quot;05/09/2020&quot; &quot;04/09/2020&quot;
+ [16] &quot;03/09/2020&quot; &quot;02/09/2020&quot; &quot;01/09/2020&quot; &quot;31/08/2020&quot; &quot;30/08/2020&quot;
+ [21] &quot;29/08/2020&quot; &quot;28/08/2020&quot; &quot;27/08/2020&quot; &quot;26/08/2020&quot; &quot;25/08/2020&quot;
+ [26] &quot;24/08/2020&quot; &quot;23/08/2020&quot; &quot;22/08/2020&quot; &quot;21/08/2020&quot; &quot;20/08/2020&quot;
+ [31] &quot;19/08/2020&quot; &quot;18/08/2020&quot; &quot;17/08/2020&quot; &quot;16/08/2020&quot; &quot;15/08/2020&quot;
+ [36] &quot;14/08/2020&quot; &quot;13/08/2020&quot; &quot;12/08/2020&quot; &quot;11/08/2020&quot; &quot;10/08/2020&quot;
+ [41] &quot;09/08/2020&quot; &quot;08/08/2020&quot; &quot;07/08/2020&quot; &quot;06/08/2020&quot; &quot;05/08/2020&quot;
+ [46] &quot;04/08/2020&quot; &quot;03/08/2020&quot; &quot;02/08/2020&quot; &quot;01/08/2020&quot; &quot;31/07/2020&quot;
+ [51] &quot;30/07/2020&quot; &quot;29/07/2020&quot; &quot;28/07/2020&quot; &quot;27/07/2020&quot; &quot;26/07/2020&quot;
+ [56] &quot;25/07/2020&quot; &quot;24/07/2020&quot; &quot;23/07/2020&quot; &quot;22/07/2020&quot; &quot;21/07/2020&quot;
+ [61] &quot;20/07/2020&quot; &quot;19/07/2020&quot; &quot;18/07/2020&quot; &quot;17/07/2020&quot; &quot;16/07/2020&quot;
+ [66] &quot;15/07/2020&quot; &quot;14/07/2020&quot; &quot;13/07/2020&quot; &quot;12/07/2020&quot; &quot;11/07/2020&quot;
+ [71] &quot;10/07/2020&quot; &quot;09/07/2020&quot; &quot;08/07/2020&quot; &quot;07/07/2020&quot; &quot;06/07/2020&quot;
+ [76] &quot;05/07/2020&quot; &quot;04/07/2020&quot; &quot;03/07/2020&quot; &quot;02/07/2020&quot; &quot;01/07/2020&quot;
+ [81] &quot;30/06/2020&quot; &quot;29/06/2020&quot; &quot;28/06/2020&quot; &quot;27/06/2020&quot; &quot;26/06/2020&quot;
+ [86] &quot;25/06/2020&quot; &quot;24/06/2020&quot; &quot;23/06/2020&quot; &quot;22/06/2020&quot; &quot;21/06/2020&quot;
+ [91] &quot;20/06/2020&quot; &quot;19/06/2020&quot; &quot;18/06/2020&quot; &quot;17/06/2020&quot; &quot;16/06/2020&quot;
+ [96] &quot;15/06/2020&quot; &quot;14/06/2020&quot; &quot;13/06/2020&quot; &quot;12/06/2020&quot; &quot;11/06/2020&quot;
+[101] &quot;10/06/2020&quot; &quot;09/06/2020&quot; &quot;08/06/2020&quot; &quot;07/06/2020&quot; &quot;06/06/2020&quot;
+[106] &quot;05/06/2020&quot; &quot;04/06/2020&quot; &quot;03/06/2020&quot; &quot;02/06/2020&quot; &quot;01/06/2020&quot;
+[111] &quot;31/05/2020&quot; &quot;30/05/2020&quot; &quot;29/05/2020&quot; &quot;28/05/2020&quot; &quot;27/05/2020&quot;
+[116] &quot;26/05/2020&quot; &quot;25/05/2020&quot; &quot;24/05/2020&quot; &quot;23/05/2020&quot; &quot;22/05/2020&quot;
+[121] &quot;21/05/2020&quot; &quot;20/05/2020&quot; &quot;19/05/2020&quot; &quot;18/05/2020&quot; &quot;17/05/2020&quot;
+[126] &quot;16/05/2020&quot; &quot;15/05/2020&quot; &quot;14/05/2020&quot; &quot;13/05/2020&quot; &quot;12/05/2020&quot;
+[131] &quot;11/05/2020&quot; &quot;10/05/2020&quot; &quot;09/05/2020&quot; &quot;08/05/2020&quot; &quot;07/05/2020&quot;
+[136] &quot;06/05/2020&quot; &quot;05/05/2020&quot; &quot;04/05/2020&quot; &quot;03/05/2020&quot; &quot;02/05/2020&quot;
+[141] &quot;01/05/2020&quot; &quot;30/04/2020&quot; &quot;29/04/2020&quot; &quot;28/04/2020&quot; &quot;27/04/2020&quot;
+[146] &quot;26/04/2020&quot; &quot;25/04/2020&quot; &quot;24/04/2020&quot; &quot;23/04/2020&quot; &quot;22/04/2020&quot;
+[151] &quot;21/04/2020&quot; &quot;20/04/2020&quot; &quot;19/04/2020&quot; &quot;18/04/2020&quot; &quot;17/04/2020&quot;
+[156] &quot;16/04/2020&quot; &quot;15/04/2020&quot; &quot;14/04/2020&quot; &quot;13/04/2020&quot; &quot;12/04/2020&quot;
+[161] &quot;11/04/2020&quot; &quot;10/04/2020&quot; &quot;09/04/2020&quot; &quot;08/04/2020&quot; &quot;07/04/2020&quot;
+[166] &quot;06/04/2020&quot; &quot;05/04/2020&quot; &quot;04/04/2020&quot; &quot;03/04/2020&quot; &quot;02/04/2020&quot;
+[171] &quot;01/04/2020&quot; &quot;31/03/2020&quot; &quot;30/03/2020&quot; &quot;29/03/2020&quot; &quot;28/03/2020&quot;
+[176] &quot;27/03/2020&quot; &quot;26/03/2020&quot; &quot;25/03/2020&quot; &quot;24/03/2020&quot; &quot;23/03/2020&quot;
+[181] &quot;22/03/2020&quot; &quot;21/03/2020&quot; &quot;20/03/2020&quot; &quot;19/03/2020&quot; &quot;18/03/2020&quot;
+[186] &quot;17/03/2020&quot; &quot;16/03/2020&quot; &quot;15/03/2020&quot; &quot;11/03/2020&quot; &quot;08/03/2020&quot;
+[191] &quot;02/03/2020&quot; &quot;01/03/2020&quot; &quot;29/02/2020&quot; &quot;28/02/2020&quot; &quot;27/02/2020&quot;
+[196] &quot;26/02/2020&quot; &quot;25/02/2020&quot; &quot;24/02/2020&quot; &quot;23/02/2020&quot; &quot;22/02/2020&quot;
+[201] &quot;21/02/2020&quot; &quot;20/02/2020&quot; &quot;19/02/2020&quot; &quot;18/02/2020&quot; &quot;17/02/2020&quot;
+[206] &quot;16/02/2020&quot; &quot;15/02/2020&quot; &quot;14/02/2020&quot; &quot;13/02/2020&quot; &quot;12/02/2020&quot;
+[211] &quot;11/02/2020&quot; &quot;10/02/2020&quot; &quot;09/02/2020&quot; &quot;08/02/2020&quot; &quot;07/02/2020&quot;
+[216] &quot;06/02/2020&quot; &quot;05/02/2020&quot; &quot;04/02/2020&quot; &quot;03/02/2020&quot; &quot;02/02/2020&quot;
+[221] &quot;01/02/2020&quot; &quot;31/01/2020&quot; &quot;30/01/2020&quot; &quot;29/01/2020&quot; &quot;28/01/2020&quot;
+[226] &quot;27/01/2020&quot; &quot;26/01/2020&quot; &quot;25/01/2020&quot; &quot;24/01/2020&quot; &quot;23/01/2020&quot;
+[231] &quot;22/01/2020&quot; &quot;21/01/2020&quot; &quot;20/01/2020&quot; &quot;19/01/2020&quot; &quot;18/01/2020&quot;
+[236] &quot;17/01/2020&quot; &quot;16/01/2020&quot; &quot;15/01/2020&quot; &quot;14/01/2020&quot; &quot;13/01/2020&quot;
+[241] &quot;12/01/2020&quot; &quot;11/01/2020&quot; &quot;10/01/2020&quot; &quot;09/01/2020&quot; &quot;08/01/2020&quot;
+[246] &quot;07/01/2020&quot; &quot;06/01/2020&quot; &quot;05/01/2020&quot; &quot;04/01/2020&quot; &quot;03/01/2020&quot;
+[251] &quot;02/01/2020&quot; &quot;01/01/2020&quot; &quot;31/12/2019&quot; &quot;14/03/2020&quot; &quot;13/03/2020&quot;
+[256] &quot;12/03/2020&quot; &quot;10/03/2020&quot; &quot;09/03/2020&quot; &quot;06/03/2020&quot; &quot;05/03/2020&quot;
+[261] &quot;04/03/2020&quot; &quot;03/03/2020&quot; &quot;07/03/2020&quot;</code></pre>
 <pre class="r"><code>dates&lt;-unique(data$dateRep) #261 days
 length(dates)</code></pre>
-<pre><code>[1] 261</code></pre>
+<pre><code>[1] 263</code></pre>
 <pre class="r"><code># make a loop through all the dates
 pvals_df &lt;- data.frame(dateRep=character(),
                  pval=double(),
@@ -1730,7 +1773,9 @@ for(i in 1:length(dates)){
   pvals_df &lt;- rbind(pvals_df, c(date,pval,pval.adjust))
   counter &lt;- counter +1
 }</code></pre>
-<pre><code>[1] &quot;16/09/2020&quot;
+<pre><code>[1] &quot;18/09/2020&quot;
+[1] &quot;17/09/2020&quot;
+[1] &quot;16/09/2020&quot;
 [1] &quot;15/09/2020&quot;
 [1] &quot;14/09/2020&quot;
 [1] &quot;13/09/2020&quot;
@@ -1972,154 +2017,156 @@ for(i in 1:length(dates)){
 <pre><code>Error in `contrasts&lt;-`(`*tmp*`, value = contr.funs[1 + isOF[nn]]): contrasts can be applied only to factors with 2 or more levels</code></pre>
 <pre class="r"><code>colnames(pvals_df) &lt;- c(&#39;dateRep&#39;,&#39;pval&#39;,&#39;qval&#39;)
 head(pvals_df)</code></pre>
-<pre><code>     dateRep                 pval               qval
-1 16/09/2020  0.00133902938159994  0.349486668597584
-2 15/09/2020  0.00129826523731146  0.338847226938291
-3 14/09/2020  0.00078167043208454  0.204015982774065
-4 13/09/2020  0.00060083456925244  0.156817822574887
-5 12/09/2020 0.000362717039328131 0.0946691472646422
-6 11/09/2020 0.000212101806269819 0.0553585714364228</code></pre>
+<pre><code>     dateRep                 pval              qval
+1 18/09/2020  0.00221293013058356 0.582000624343477
+2 17/09/2020  0.00193993672100378 0.510203357623995
+3 16/09/2020  0.00137483783866204 0.361582351568117
+4 15/09/2020  0.00129462826980519 0.340487234958766
+5 14/09/2020 0.000780515441512294 0.205275561117733
+6 13/09/2020  0.00059946646164159 0.157659679411738</code></pre>
 <pre class="r"><code># significant dates with p-value (un-adjusted)
 pvals_df %&gt;% filter(pval &lt; 0.05)</code></pre>
 <pre><code>      dateRep                 pval               qval
-1  16/09/2020  0.00133902938159994  0.349486668597584
-2  15/09/2020  0.00129826523731146  0.338847226938291
-3  14/09/2020  0.00078167043208454  0.204015982774065
-4  13/09/2020  0.00060083456925244  0.156817822574887
-5  12/09/2020 0.000362717039328131 0.0946691472646422
-6  11/09/2020 0.000212101806269819 0.0553585714364228
-7  10/09/2020 0.000142990235220594  0.037320451392575
-8  09/09/2020 0.000119133684849556 0.0310938917457341
-9  08/09/2020  0.00010417162522385 0.0271887941834249
-10 06/08/2020 0.000217378943162644 0.0567359041654501
-11 05/08/2020 0.000383330190402981  0.100049179695178
-12 04/08/2020 0.000472154996796515   0.12323245416389
-13 03/08/2020 0.000569242315843679    0.1485722444352
-14 02/08/2020  0.00077994764628007  0.203566335679098
-15 01/08/2020 0.000533519932379453  0.139248702351037
-16 31/07/2020 0.000842189682593134  0.219811507156808
-17 30/07/2020  0.00103899494288778   0.27117768009371
-18 29/07/2020 0.000979437544979277  0.255633199239591
-19 28/07/2020   0.0013537683668178  0.353333543739445
-20 27/07/2020  0.00166285841809932  0.434006047123922
-21 26/07/2020  0.00202782426085195  0.529262132082358
-22 25/07/2020  0.00290145495007906  0.757279741970635
-23 24/07/2020  0.00198809299805054   0.51889227249119
-24 23/07/2020  0.00206541071700599  0.539072197138562
-25 22/07/2020  0.00210429804872132  0.549221790716264
-26 21/07/2020  0.00269918693556382  0.704487790182157
-27 20/07/2020  0.00310966675284558  0.811623022492695
-28 19/07/2020  0.00349735058156148  0.912808501787546
-29 18/07/2020  0.00389290205677987                  1
-30 17/07/2020  0.00602843119996869                  1
-31 16/07/2020  0.00848227427682026                  1
-32 15/07/2020  0.00990217107718485                  1
-33 14/07/2020  0.00885629183525209                  1
-34 13/07/2020  0.00713398197452521                  1
-35 12/07/2020  0.00702619552563119                  1
-36 11/07/2020  0.00806756573132548                  1
-37 10/07/2020   0.0108755397934306                  1
-38 09/07/2020   0.0124084500976596                  1
-39 08/07/2020   0.0114684728617188                  1
-40 07/07/2020   0.0116413899832993                  1
-41 06/07/2020   0.0128015002168565                  1
-42 05/07/2020   0.0126227220616473                  1
-43 04/07/2020   0.0149163755011611                  1
-44 03/07/2020   0.0172783484655668                  1
-45 02/07/2020   0.0152641969520277                  1
-46 01/07/2020   0.0207328034720336                  1
-47 30/06/2020   0.0283365199125709                  1
-48 29/06/2020   0.0355532894142341                  1
-49 28/06/2020   0.0414932812844046                  1
-50 27/06/2020   0.0418212887396115                  1
-51 26/06/2020   0.0443906147389183                  1
-52 25/06/2020   0.0452305013348554                  1
-53 25/05/2020   0.0465050363373399                  1
-54 24/05/2020   0.0452616557752858                  1
-55 23/05/2020   0.0389426283390429                  1
-56 22/05/2020   0.0377817005358159                  1
-57 21/05/2020    0.038042148261076                  1
-58 20/05/2020   0.0332536056711809                  1
-59 19/05/2020   0.0311409446543896                  1
-60 18/05/2020   0.0382560734737412                  1
-61 17/05/2020   0.0373841044593429                  1
-62 16/05/2020   0.0378206454199423                  1
-63 15/05/2020   0.0397024883817506                  1
-64 14/05/2020   0.0324153411892577                  1
-65 13/05/2020   0.0275500174187726                  1
-66 12/05/2020   0.0240478542880564                  1
-67 11/05/2020    0.020549731143615                  1
-68 10/05/2020   0.0200808697577621                  1
-69 09/05/2020   0.0155043992985993                  1
-70 08/05/2020   0.0114807152058221                  1
-71 07/05/2020  0.00642159405925325                  1
-72 06/05/2020  0.00369946800365712  0.965561148954508
-73 05/05/2020  0.00268796813637722  0.701559683594455
-74 04/05/2020  0.00143546452487838  0.374656240993257
-75 03/05/2020 0.000942368722369982  0.245958236538565
-76 02/05/2020 0.000474022123819812  0.123719774316971
-77 01/05/2020 0.000255405161430281 0.0666607471333033
-78 30/04/2020 0.000115420683546419 0.0301247984056154
-79 29/04/2020 0.000141856258358816 0.0370244834316511
-80 28/04/2020 0.000213486233001117 0.0557199068132917
-81 27/04/2020 0.000112972458102127 0.0294858115646551
-82 28/03/2020 0.000108799891602817 0.0283967717083353
-83 27/03/2020  0.00040709206189205  0.106251028153825
-84 26/03/2020  0.00262736153619436  0.685741360946729
-85 25/03/2020  0.00503687956419404                  1
-86 24/03/2020   0.0115678693945363                  1
-87 23/03/2020   0.0177246656991473                  1
-88 22/03/2020   0.0354917898782399                  1</code></pre>
+1  18/09/2020  0.00221293013058356  0.582000624343477
+2  17/09/2020  0.00193993672100378  0.510203357623995
+3  16/09/2020  0.00137483783866204  0.361582351568117
+4  15/09/2020  0.00129462826980519  0.340487234958766
+5  14/09/2020 0.000780515441512294  0.205275561117733
+6  13/09/2020  0.00059946646164159  0.157659679411738
+7  12/09/2020 0.000362107360335339 0.0952342357681941
+8  11/09/2020  0.00021241052903238  0.055863969135516
+9  10/09/2020 0.000143617477765017 0.0377713966521994
+10 09/09/2020 0.000118896099925923 0.0312696742805176
+11 08/09/2020 0.000104417231725977 0.0274617319439319
+12 06/08/2020 0.000217041151714691 0.0570818229009638
+13 05/08/2020 0.000382582143846871  0.100619103831727
+14 04/08/2020 0.000471130924869312  0.123907433240629
+15 03/08/2020 0.000568798374313651   0.14959397244449
+16 02/08/2020 0.000778575746334637  0.204765421286009
+17 01/08/2020 0.000533027629667772  0.140186266602624
+18 31/07/2020 0.000841570483188536  0.221333037078585
+19 30/07/2020  0.00103779596062553  0.272940337644514
+20 29/07/2020 0.000977054676752094  0.256965379985801
+21 28/07/2020  0.00135196274564433  0.355566202104459
+22 27/07/2020  0.00165922361422966  0.436375810542401
+23 26/07/2020  0.00202047868260618  0.531385893525426
+24 25/07/2020  0.00289614514256911  0.761686172495675
+25 24/07/2020  0.00198198284018616  0.521261486968961
+26 23/07/2020  0.00206402700416301  0.542839102094871
+27 22/07/2020  0.00209996198693693  0.552290002564412
+28 21/07/2020  0.00269193724139793  0.707979494487655
+29 20/07/2020  0.00310095299622764  0.815550638007869
+30 19/07/2020  0.00347567088857969  0.914101443696458
+31 18/07/2020  0.00386721657825383                  1
+32 17/07/2020  0.00599246430523315                  1
+33 16/07/2020  0.00841586462943992                  1
+34 15/07/2020  0.00981460013485838                  1
+35 14/07/2020  0.00880808615020184                  1
+36 13/07/2020   0.0070731238673482                  1
+37 12/07/2020  0.00691084994861627                  1
+38 11/07/2020  0.00790614839879363                  1
+39 10/07/2020   0.0106139496151678                  1
+40 09/07/2020   0.0121327135060974                  1
+41 08/07/2020   0.0113237745935121                  1
+42 07/07/2020   0.0116372639012972                  1
+43 06/07/2020   0.0127058192472447                  1
+44 05/07/2020   0.0124752032192479                  1
+45 04/07/2020    0.014636293982513                  1
+46 03/07/2020   0.0169641623372509                  1
+47 02/07/2020    0.015118294261889                  1
+48 01/07/2020   0.0207701706663439                  1
+49 30/06/2020    0.028362309567089                  1
+50 29/06/2020   0.0353836575217951                  1
+51 28/06/2020   0.0414145077906527                  1
+52 27/06/2020   0.0418174129446449                  1
+53 26/06/2020   0.0446019349234118                  1
+54 25/06/2020   0.0455198792425859                  1
+55 25/05/2020   0.0464850120209519                  1
+56 24/05/2020   0.0452113504364548                  1
+57 23/05/2020   0.0388780981020849                  1
+58 22/05/2020   0.0377982013575601                  1
+59 21/05/2020   0.0380634464323576                  1
+60 20/05/2020   0.0333389510199768                  1
+61 19/05/2020   0.0312274686754802                  1
+62 18/05/2020   0.0382649075910652                  1
+63 17/05/2020   0.0373078566015056                  1
+64 16/05/2020   0.0380166109393723                  1
+65 15/05/2020   0.0399145054490884                  1
+66 14/05/2020   0.0326682517666339                  1
+67 13/05/2020   0.0275643407172533                  1
+68 12/05/2020   0.0239535863118156                  1
+69 11/05/2020   0.0206635507969711                  1
+70 10/05/2020   0.0202208330886273                  1
+71 09/05/2020   0.0154869757885824                  1
+72 08/05/2020   0.0114820965767062                  1
+73 07/05/2020  0.00645353455334503                  1
+74 06/05/2020  0.00370760643173388  0.975100491546011
+75 05/05/2020  0.00265887239595341  0.699283440135748
+76 04/05/2020  0.00145161542098174  0.381774855718196
+77 03/05/2020 0.000963869548187381  0.253497691173281
+78 02/05/2020 0.000471101352955406  0.123899655827272
+79 01/05/2020 0.000248305916555058 0.0653044560539803
+80 30/04/2020 0.000110720513709154 0.0291194951055074
+81 29/04/2020 0.000140285488189048 0.0368950833937196
+82 28/04/2020 0.000215477422097219 0.0566705620115685
+83 27/04/2020 0.000111001787465923 0.0291934701035378
+84 28/03/2020 0.000107785835642605 0.0283476747740051
+85 27/03/2020 0.000405872890508477  0.106744570203729
+86 26/03/2020  0.00261683793880173  0.688228377904855
+87 25/03/2020  0.00511647750805643                  1
+88 24/03/2020   0.0115919657400319                  1
+89 23/03/2020    0.018052943346192                  1
+90 22/03/2020   0.0359641682163955                  1</code></pre>
 <pre class="r"><code># significant dates with q-value (fdr correction)
 pvals_df %&gt;% filter(qval &lt; 0.05)</code></pre>
 <pre><code>      dateRep                 pval                 qval
-1  10/09/2020 0.000142990235220594    0.037320451392575
-2  09/09/2020 0.000119133684849556   0.0310938917457341
-3  08/09/2020  0.00010417162522385   0.0271887941834249
-4  07/09/2020 7.79493238483668e-05   0.0203447735244237
-5  06/09/2020 3.26842435884166e-05  0.00853058757657672
-6  05/09/2020 3.42139190922481e-05  0.00892983288307674
-7  04/09/2020 2.24053347656017e-05  0.00584779237382204
-8  03/09/2020 2.14832917588318e-05  0.00560713914905509
-9  02/09/2020 2.07870587056544e-05   0.0054254223221758
-10 01/09/2020 8.75630911928361e-06  0.00228539668013302
-11 31/08/2020 1.13805047796523e-05  0.00297031174748926
-12 30/08/2020 1.02080691560193e-05  0.00266430604972103
-13 29/08/2020 9.32516304066318e-06  0.00243386755361309
-14 28/08/2020 1.16505533675964e-05  0.00304079442894267
-15 27/08/2020 1.14905150308371e-05  0.00299902442304848
-16 26/08/2020 5.57848989320216e-06  0.00145598586212576
-17 25/08/2020 4.64527412116817e-06  0.00121241654562489
-18 24/08/2020 3.66808407939189e-06 0.000957369944721283
-19 23/08/2020 4.35128802268697e-06   0.0011356861739213
-20 22/08/2020 5.14351532029525e-06  0.00134245749859706
-21 21/08/2020 1.08632945006699e-05  0.00283531986467483
-22 20/08/2020 8.85250432583393e-06  0.00231050362904266
-23 19/08/2020 5.68135702266111e-06  0.00148283418291455
-24 18/08/2020 8.32553955351039e-06  0.00217296582346621
-25 17/08/2020 7.26596196590024e-06  0.00189641607309996
-26 16/08/2020 5.86825891641117e-06  0.00153161557718332
-27 15/08/2020 1.17037075704041e-05  0.00305466767587546
-28 14/08/2020 9.08506262310333e-06  0.00237120134462997
-29 13/08/2020 7.56000326843798e-06  0.00197316085306231
-30 12/08/2020 8.79517009371875e-06  0.00229553939446059
-31 11/08/2020 1.43479858754871e-05  0.00374482431350214
-32 10/08/2020 1.50680085073679e-05  0.00393275022042302
-33 09/08/2020 1.67096623924303e-05   0.0043612218844243
-34 08/08/2020 2.90146326902141e-05  0.00757281913214587
-35 07/08/2020 8.03005854190782e-05   0.0209584527943794
-36 30/04/2020 0.000115420683546419   0.0301247984056154
-37 29/04/2020 0.000141856258358816   0.0370244834316511
-38 27/04/2020 0.000112972458102127   0.0294858115646551
-39 26/04/2020 1.86002489315273e-05  0.00485466497112863
-40 25/04/2020 6.97873415083179e-06   0.0018214496133671
-41 24/04/2020 8.81091284148267e-07 0.000229964825162698
-42 23/04/2020 4.82284685749168e-07 0.000125876302980533
-43 01/04/2020 2.14656229583836e-06 0.000560252759213813
-44 31/03/2020 9.81728339062931e-06  0.00256231096495425
-45 30/03/2020 1.59531922437229e-05  0.00416378317561167
-46 29/03/2020  3.7484051818421e-05  0.00978333752460788
-47 28/03/2020 0.000108799891602817   0.0283967717083353</code></pre>
+1  10/09/2020 0.000143617477765017   0.0377713966521994
+2  09/09/2020 0.000118896099925923   0.0312696742805176
+3  08/09/2020 0.000104417231725977   0.0274617319439319
+4  07/09/2020 7.81997355027984e-05    0.020566530437236
+5  06/09/2020 3.27469526346735e-05  0.00861244854291914
+6  05/09/2020 3.42213333111925e-05  0.00900021066084361
+7  04/09/2020  2.2479469408229e-05  0.00591210045436421
+8  03/09/2020 2.15019699263814e-05  0.00565501809063831
+9  02/09/2020 2.09149989843388e-05  0.00550064473288112
+10 01/09/2020 8.81056569430496e-06   0.0023171787776022
+11 31/08/2020 1.15398804212016e-05  0.00303498855077603
+12 30/08/2020 1.03652581014535e-05  0.00272606288068227
+13 29/08/2020 9.46424446028952e-06  0.00248909629305614
+14 28/08/2020 1.16313073195981e-05  0.00305903382505429
+15 27/08/2020 1.15456295414119e-05  0.00303650056939134
+16 26/08/2020   5.583767345878e-06  0.00146853081196591
+17 25/08/2020 4.63020267916982e-06  0.00121774330462166
+18 24/08/2020 3.62016646614681e-06 0.000952103780596612
+19 23/08/2020 4.38070788615756e-06  0.00115212617405944
+20 22/08/2020 5.15934984988409e-06  0.00135690901051952
+21 21/08/2020 1.09089950438342e-05  0.00286906569652841
+22 20/08/2020 8.79003079914891e-06  0.00231177810017616
+23 19/08/2020 5.62930335912687e-06  0.00148050678345037
+24 18/08/2020  8.2350121387447e-06  0.00216580819248986
+25 17/08/2020 7.13944693868648e-06  0.00187767454487454
+26 16/08/2020 5.78369731125756e-06  0.00152111239286074
+27 15/08/2020 1.15154535691708e-05  0.00302856428869192
+28 14/08/2020 9.03495353260917e-06  0.00237619277907621
+29 13/08/2020 7.46163372829656e-06  0.00196240967054199
+30 12/08/2020 8.70685053288754e-06  0.00228990169014942
+31 11/08/2020 1.42602273221712e-05  0.00375043978573103
+32 10/08/2020 1.50013062537894e-05  0.00394534354474661
+33 09/08/2020 1.65782579767439e-05  0.00436008184788364
+34 08/08/2020 2.88524799772886e-05  0.00758820223402691
+35 07/08/2020 7.96658160820048e-05   0.0209521096295673
+36 30/04/2020 0.000110720513709154   0.0291194951055074
+37 29/04/2020 0.000140285488189048   0.0368950833937196
+38 27/04/2020 0.000111001787465923   0.0291934701035378
+39 26/04/2020 1.78402501685269e-05  0.00469198579432258
+40 25/04/2020 6.58897827250892e-06  0.00173290128566985
+41 24/04/2020 8.49243138791342e-07 0.000223350945502123
+42 23/04/2020  4.3751271467641e-07 0.000115065843959896
+43 01/04/2020 2.12082518340093e-06 0.000557777023234445
+44 31/03/2020 9.73726495128017e-06  0.00256090068218668
+45 30/03/2020 1.55249242952245e-05  0.00408305508964404
+46 29/03/2020 3.69549426014831e-05  0.00971914990419006
+47 28/03/2020 0.000107785835642605   0.0283476747740051</code></pre>
 <pre class="r"><code># show specific date (significant p value wihtout fdr correction): 16/09/2020
 library(ggplot2)
 data1 &lt;- data[data$dateRep==&#39;10/09/2020&#39;,]
@@ -2155,7 +2202,7 @@ data1$continentExp</code></pre>
 [197] &quot;Asia&quot;    &quot;Europe&quot;  &quot;Africa&quot;  &quot;America&quot; &quot;America&quot; &quot;America&quot; &quot;Asia&quot;   
 [204] &quot;America&quot; &quot;Asia&quot;    &quot;Africa&quot;  &quot;Asia&quot;    &quot;Africa&quot;  &quot;Africa&quot; </code></pre>
 <pre class="r"><code>ggplot(data1, aes_string(x=&#39;continentExp&#39;,y=&#39;Cumulative_number_for_14_days_of_COVID.19_cases_per_100000&#39;)) + geom_boxplot(aes(fill=continentExp))</code></pre>
-<p><img src="figure/P-hacking_COVID-19_c.elegans.Rmd/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/P-hacking_COVID-19_c.elegans.Rmd/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
